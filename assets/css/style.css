@@ -1634,3 +1634,31 @@ header.dark-mode, footer.dark-mode {
 body.dark-mode .dark-mode-text {
   color: #e0e0e0;
 }
+
+
+
+
+.resume-download {
+  margin-top: 20px;
+}
+
+.resume-download .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif; /* Match the font with the navbar */
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.resume-download .btn:hover {
+  background-color: #0056b3;
+}
+
+body.dark-mode .resume-download .btn {
+  background-color: #3700b3;
+  color: #ffffff;
+}
