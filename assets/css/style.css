@@ -100,7 +100,7 @@ a:hover {
 }
 
 .overlay-mf {
-  background-color: #0078ff;
+  background-color: #ffffff;
 }
 
 .overlay-mf {
@@ -450,9 +450,9 @@ a:hover {
 
 .button-a {
   text-decoration: none;
-  background-color: #0078ff;
-  color: #fff;
-  border-color: #cde1f8;
+  /*background-color: #0078ff;*/
+  color: #076fc9;
+  border-color: #076fc9;
 }
 
 .button-big {
@@ -1486,4 +1486,151 @@ footer .credits {
 
 footer .credits a {
   color: #fff;
+}
+
+
+
+
+
+
+
+
+
+/* Toggle Switch Style */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+  color: #ffffff;
+}
+
+body.dark-mode a {
+  color: #bb86fc;
+}
+body.dark-mode section:not(#hero),
+body.dark-mode .box-shadow-full,
+body.dark-mode .card,
+body.dark-mode .container {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.1), 0 2px 5px 0 rgba(255, 255, 255, 0.2);
+}
+
+
+body.dark-mode .button {
+  background-color: #3700b3;
+  color: #ffffff;
+}
+
+body.dark-mode .button:hover {
+  background-color: #6200ee;
+}
+
+
+
+
+
+
+header.dark-mode, footer.dark-mode {
+  background-color: #1e1e1e;
+}
+
+.navbar.dark-mode a {
+  color: #ffffff;
+}
+
+/* Dark mode for specific sections and cards */
+.about-container.dark-mode,
+.highlights-container.dark-mode,
+.projects-container.dark-mode,
+.contact-container.dark-mode {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.card.dark-mode {
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+/* Add more dark mode styles as needed */
+
+
+
+
+.dark-mode-toggle {
+  display: flex;
+  align-items: center;
+}
+
+/*.dark-mode-text {*/
+/*  margin-left: 10px;*/
+/*  .navbar a{*/
+/*    font-family: Verdana, monospace !important;*/
+/*  } !* Match the font with the navbar *!*/
+/*  font-size: 20px; !* Adjust the font size if needed *!*/
+/*  color: #000;*/
+/*  margin-right: 10px;*/
+/*}*/
+
+body.dark-mode .dark-mode-text {
+  color: #e0e0e0;
 }
