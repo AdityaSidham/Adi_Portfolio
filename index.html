@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/AdiportfolioLogo.png" rel="icon">
+  <link href="assets/img/AdiportfolioLogo.png" rel="apple-touch-icon">
 
 
   <!-- Vendor CSS Files -->
@@ -780,6 +780,45 @@
   <!--      </div>-->
   <!--    </section>&lt;!&ndash; End Blog Section &ndash;&gt;-->
 
+  <section id="funfact" class="paralax-mf sect-mt4 route">
+    <div class="container">
+
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">Random FunFact!</h3>
+            <div class="line-mf"></div>
+          </div>
+          <div id="funfact-box" class=" text-center p-4 ">
+            <p id="random-funfact" class="box-shadow-full funfact-text">Loading a fun fact...</p>
+          </div>
+        </div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <!-- ======= Contact Section ======= -->
   <section id="contact" class="paralax-mf  sect-mt4 route">
 
@@ -959,48 +998,25 @@
 
 
 
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const funfactBox = document.getElementById('random-funfact');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--  <script>-->
-<!--    document.addEventListener('DOMContentLoaded', (event) => {-->
-<!--      const toggleSwitch = document.getElementById('darkModeSwitch');-->
-<!--      const currentTheme = localStorage.getItem('theme');-->
-
-<!--      if (currentTheme) {-->
-<!--        document.body.classList.add(currentTheme);-->
-<!--        if (currentTheme === 'dark-mode') {-->
-<!--          toggleSwitch.checked = true;-->
-<!--        }-->
-<!--      }-->
-
-<!--      toggleSwitch.addEventListener('change', function() {-->
-<!--        if (toggleSwitch.checked) {-->
-<!--          document.body.classList.add('dark-mode');-->
-<!--          document.querySelectorAll('header, footer, section, .navbar').forEach(el => el.classList.add('dark-mode'));-->
-<!--          localStorage.setItem('theme', 'dark-mode');-->
-<!--        } else {-->
-<!--          document.body.classList.remove('dark-mode');-->
-<!--          document.querySelectorAll('header, footer, section, .navbar').forEach(el => el.classList.remove('dark-mode'));-->
-<!--          localStorage.setItem('theme', '');-->
-<!--        }-->
-<!--      });-->
-<!--    });-->
-<!--  </script>-->
-
-
-
+    fetch('https://api.api-ninjas.com/v1/facts', {
+      headers: {
+        'X-Api-Key': 'szh+nFE3i85fg/IwDi/UcQ==v2OIivMk4Q0WKXcg' // Replace with your actual API key
+      }
+    })
+            .then(response => response.json())
+            .then(data => {
+              funfactBox.textContent = data[0].fact;
+            })
+            .catch(error => {
+              funfactBox.textContent = "Sorry, we couldn't fetch a fun fact at this time. Please try again later.";
+              console.error('Error fetching fun fact:', error);
+            });
+  });
+</script>
 
 
 </body>
