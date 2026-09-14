@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FitandFine — Aditya Sidham</title>
+  <meta name="description" content="FitandFine is a solo-built iOS nutrition platform with barcode scanning, label OCR, Apple Health data and a four-agent Claude system behind a native SwiftUI app.">
+  <meta name="theme-color" content="#F6F7F2">
+  <meta property="og:title" content="FitandFine — Aditya Sidham">
+  <meta property="og:description" content="FitandFine is a solo-built iOS nutrition platform with barcode scanning, label OCR, Apple Health data and a four-agent Claude system behind a native SwiftUI app.">
+  <meta property="og:image" content="assets/img/web/fitandfine-dashboard.jpg">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=20260914e">
+  <script>(function(){try{var t=localStorage.getItem('theme');if(t==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
+</head>
+<body class="is-ready">
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 8.4 22.9c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5Z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 2H3.6A1.6 1.6 0 0 0 2 3.6v16.8A1.6 1.6 0 0 0 3.6 22h16.8a1.6 1.6 0 0 0 1.6-1.6V3.6A1.6 1.6 0 0 0 20.4 2ZM8 19H5V9.5h3V19ZM6.5 8.2a1.7 1.7 0 1 1 0-3.5 1.7 1.7 0 0 1 0 3.5ZM19 19h-3v-4.6c0-1.1 0-2.5-1.5-2.5S12.7 13 12.7 14.3V19h-3V9.5h2.9v1.3a3.2 3.2 0 0 1 2.8-1.5c3 0 3.6 2 3.6 4.6V19Z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.75" fill="currentColor"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 3h3l-7.1 8.2L21.8 21h-6.4l-5-6.4L4.6 21h-3l7.6-8.7L1.5 3H8l4.5 5.9L17.5 3Zm-1.1 16.2h1.7L7.7 4.7H5.9l10.5 14.5Z"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 7 5-3 5 3-1.5-7"/></symbol>
+    <symbol id="i-patent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h6M9 17h6"/><circle cx="9.5" cy="9.5" r="1.25"/></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c4.4 0 7-3 7-7 0-3.5-2-5.6-3.5-7.5-.4 2-1.4 3-2.5 3.5 0-3-1-6-4-8 0 3-1.5 4.5-3 6.5S5 13 5 15c0 4 2.6 7 7 7Z"/><path d="M12 22c-1.7 0-3-1.4-3-3 0-1.7 1.3-2.6 3-4.5 1.7 1.9 3 2.8 3 4.5 0 1.6-1.3 3-3 3Z"/></symbol>
+    <symbol id="i-bot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 8V4M9 4h6M2 13h2M20 13h2"/><circle cx="9" cy="14" r="1" fill="currentColor"/><circle cx="15" cy="14" r="1" fill="currentColor"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m2 9 10-5 10 5-10 5L2 9Z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5M22 9v6"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 12h18"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 4l-4 16"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 13 9 5 9-5M3 18l9 5 9-5"/></symbol>
+    <symbol id="i-database" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></symbol>
+    <symbol id="i-sparkles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3Z"/><path d="M19 17l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7.7-2ZM5 3l.5 1.5L7 5l-1.5.5L5 7l-.5-1.5L3 5l1.5-.5L5 3Z"/></symbol>
+    <symbol id="i-mountain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m3 20 6-11 4 6 2-3 6 8H3Z"/><circle cx="17" cy="6" r="2"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0 5 5L21 9.9A6 6 0 0 1 13.1 3L14.7 6.3ZM10.5 13.5 3.8 20.2a1.8 1.8 0 0 0 2.5 2.5l6.7-6.7"/></symbol>
+    <symbol id="i-message" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 21l1.9-5.4A8 8 0 1 1 21 12Z"/></symbol>
+  </defs>
+</svg>
+
+<header class="nav">
+  <div class="container">
+    <a class="brand" href="index.html" aria-label="Aditya Sidham — home"><span class="mark" aria-hidden="true">AS</span>Aditya Sidham</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html#work" class="is-active">Work</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#highlights">Highlights</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+        <svg class="sun"><use href="#i-sun"/></svg>
+        <svg class="moon"><use href="#i-moon"/></svg>
+      </button>
+      <a class="btn btn--sm" href="assets/resume/Aditya_Sidham_Resume.pdf" target="_blank" rel="noopener" data-magnetic="0.18">Résumé <svg><use href="#i-download"/></svg></a>
+      <button class="icon-btn menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu">
+  <ol>
+    <li><a href="index.html#work">Work</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#experience">Experience</a></li>
+    <li><a href="index.html#highlights">Highlights</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ol>
+  <div class="mm-foot">
+    <a class="btn" href="assets/resume/Aditya_Sidham_Resume.pdf" target="_blank" rel="noopener">View résumé <svg><use href="#i-download"/></svg></a>
+    <a class="icon-btn" href="https://www.linkedin.com/in/adityasidham/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
+    <a class="icon-btn" href="https://github.com/adityasidham" target="_blank" rel="noopener" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
+  </div>
+</div>
+
+<main id="top">
+  <section class="project-hero" aria-labelledby="p-title">
+    <div class="dotfield" aria-hidden="true"></div>
+    <div class="art" style="right: -3%; top: 2%; width: min(38vw, 460px); aspect-ratio: 520/420; z-index: -1;"><svg viewBox="0 0 520 420" class="constellation" aria-hidden="true"><line class="edge" x1="139" y1="226" x2="200" y2="247"/><line class="edge" x1="139" y1="226" x2="36" y2="331"/><line class="edge" x1="139" y1="226" x2="149" y2="114"/><line class="edge" x1="200" y1="247" x2="36" y2="331"/><line class="edge" x1="200" y1="247" x2="271" y2="297"/><line class="edge" x1="318" y1="54" x2="324" y2="84"/><line class="edge" x1="318" y1="54" x2="339" y2="53"/><line class="edge" x1="318" y1="54" x2="169" y2="41"/><line class="edge" x1="149" y1="114" x2="169" y2="41"/><line class="edge" x1="488" y1="199" x2="415" y2="201"/><line class="edge" x1="488" y1="199" x2="428" y2="200"/><line class="edge" x1="415" y1="201" x2="379" y2="243"/><line class="edge" x1="415" y1="201" x2="428" y2="200"/><line class="edge" x1="324" y1="84" x2="339" y2="53"/><line class="edge" x1="322" y1="342" x2="271" y2="297"/><line class="edge" x1="322" y1="342" x2="379" y2="243"/><line class="edge" x1="379" y1="243" x2="428" y2="200"/><circle class="node" cx="139" cy="226" r="3"/><circle class="node" cx="200" cy="247" r="3.5"/><circle class="node" cx="318" cy="54" r="3"/><circle class="node" cx="36" cy="331" r="3"/><circle class="node" cx="149" cy="114" r="3.5"/><circle class="node" cx="488" cy="199" r="3.5"/><circle class="node" cx="415" cy="201" r="3"/><circle class="node" cx="324" cy="84" r="2.5"/><circle class="node" cx="322" cy="342" r="3"/><circle class="node" cx="271" cy="297" r="2.5"/><circle class="node" cx="339" cy="53" r="2.5"/><circle class="node is-accent" cx="379" cy="243" r="4"/><circle class="node" cx="169" cy="41" r="2.5"/><circle class="node" cx="428" cy="200" r="3"/><text class="label" x="389" y="235">agents</text></svg></div>
+    <div class="container">
+      <p class="crumbs" data-reveal="fade"><a href="index.html#work"><svg><use href="#i-arrow-right"/></svg> All work</a></p>
+      <p class="mono" data-reveal style="margin-bottom:20px">Case study · 01 · Flagship · AI + native iOS</p>
+      <h1 class="display h-hero" id="p-title" data-reveal style="--d:60ms">FitandFine: nutrition tracking that <em>adapts</em> to the person using it.</h1>
+      <p class="lede" data-reveal style="--d:120ms">A native iOS platform that combines fast food logging, nutrition‑label OCR, Apple Health data and four specialised Claude agents. Instead of handing everyone the same static calorie formula, it compares the plan with real behaviour and proposes adjustments the user can review.</p>
+      <dl class="meta-grid" data-reveal style="--d:180ms">
+        <div><dt>Category</dt><dd>Applied AI, native iOS, backend</dd></div>
+        <div><dt>Stack</dt><dd>Swift · SwiftUI · SwiftData · HealthKit · AVFoundation · FastAPI · PostgreSQL · Redis · Celery · Claude API · OpenCV · Tesseract · AWS S3</dd></div>
+        <div><dt>Timeline</dt><dd>Apr 2026 — present</dd></div>
+        <div><dt>Recognition</dt><dd><span class="pill">Solo build</span><br>Design, iOS, backend and AI layer</dd></div>
+      </dl>
+      <figure class="project-cover is-shots vf" data-reveal="scale" style="--d:240ms">
+        <span class="vf-b" aria-hidden="true"></span>
+        <div class="shots" aria-hidden="true"><img src="assets/img/web/fitandfine-dashboard.jpg" alt="" width="440" height="1022" fetchpriority="high"><img src="assets/img/web/fitandfine-foodlog.jpg" alt="" width="440" height="1022" fetchpriority="high"><img src="assets/img/web/fitandfine-coach.jpg" alt="" width="440" height="1022" fetchpriority="high"><img src="assets/img/web/fitandfine-analytics.jpg" alt="" width="440" height="1022" fetchpriority="high"></div><span class="sr-only">Four FitandFine screens: FitandFine dashboard with calorie ring and macro bars, FitandFine food log grouped by meal, FitCoach answering a question from the user's own logs, FitandFine analytics with calorie trend and macro split</span>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: clamp(64px, 8vw, 112px)">
+    <div class="container project-body">
+      <aside class="side" data-reveal>
+        <p class="mono" style="margin-bottom:16px">On this page</p>
+        <ol>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#agents">The four agents</a></li><li><a href="#impact">Results</a></li>
+          <li><a href="#learned">What I learned</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ol>
+      </aside>
+      <div>
+        <section id="overview" data-reveal>
+          <h2 class="display">Overview</h2>
+          <div class="prose"><p>Most nutrition apps are good at recording what happened. They are less useful when a routine changes, the initial calorie estimate is wrong, or logging becomes too slow to keep up. <strong>I built FitandFine to close the gap between tracking and adaptation.</strong></p>
+<p>The app handles barcode lookup, manual entry, nutrition‑label scanning, daily logs, macro trends, weight tracking, and activity and sleep from Apple Health, with an AI coach grounded in the user's own history. Behind the interface, a FastAPI backend coordinates food data, asynchronous OCR, analytics and four specialised Claude agents.</p>
+<p>It is the clearest expression of the kind of engineer I want to be: close to the user, comfortable across the stack, and willing to stay with a problem past the demo.</p></div>
+        </section>
+        <section id="how" data-reveal>
+          <h2 class="display">How it works</h2>
+          <ul class="bullets"><li><strong>Make the frequent action fast.</strong> Barcode scanning returns a matching food card in under 500 ms against more than 50,000 USDA items. Redis caches repeat lookups; SwiftData keeps previously used foods available offline.</li>
+<li><strong>Let AI interpret, not silently decide.</strong> The AI layer can parse a label, explain a weekly pattern, suggest a meal or propose a calorie change. It never moves a goal without confirmation.</li>
+<li><strong>Use personal context carefully.</strong> HealthKit supplies steps, active calories and sleep, which the analysis combines with food logs and weight trend rather than treating every day as identical.</li>
+<li><strong>Keep long work off the request path.</strong> Celery workers run OCR and the scheduled weekly analysis, so the interface never waits on an unpredictable model call.</li>
+<li><strong>Close the loop.</strong> The calorie target re‑fits against observed weight trend and activity instead of staying fixed to the formula it started with.</li></ul>
+        </section>
+        <section id="agents" data-reveal><h2 class="display">The four agents</h2><ul class="bullets"><li><strong>Food Parser.</strong> After OpenCV and Tesseract pull text off a nutrition label, this agent turns noisy OCR into structured nutrition data and returns per-field confidence. High confidence flows into the log; anything uncertain goes to a review screen.</li><li><strong>Diet Analysis.</strong> Reads a seven-day summary of logs, weight direction and goal settings, then reports adherence patterns, macro imbalances and meal-timing issues in priority order.</li><li><strong>Recommendation.</strong> Uses remaining macros, dietary restrictions, allergies and budget to suggest realistic meals rather than a generic food list.</li><li><strong>Progress Evaluator.</strong> Compares four weeks of weight and calorie adherence and tries to tell a consistency problem apart from a genuine plateau before proposing a change.</li></ul><div class="prose" style="margin-top:20px"><p>A central orchestrator routes each request to the right agent. The agents never call one another, which keeps responsibilities clear and makes every output easy to validate on its own.</p></div></section><section id="impact" data-reveal><h2 class="display">Impact</h2><div class="stat-row"><div class="stat"><div class="num">&lt;500ms</div><div class="lbl">barcode to food card</div></div><div class="stat"><div class="num">50,000+</div><div class="lbl">USDA food records</div></div><div class="stat"><div class="num">&gt;85%</div><div class="lbl">OCR field accuracy in testing</div></div><div class="stat"><div class="num">4</div><div class="lbl">specialised Claude agents</div></div><div class="stat"><div class="num">Offline</div><div class="lbl">cached foods and logs</div></div><div class="stat"><div class="num">Closed loop</div><div class="lbl">target re-fits on real data</div></div></div></section>
+        <section id="learned" data-reveal><h2 class="display">What I learned</h2><div class="prose"><p>The most useful lesson was that <strong>AI architecture is product architecture</strong>. Confidence thresholds, review states, response streaming, background execution and user confirmation mattered as much as the prompts did.</p><p>Specialised agents beat one general-purpose prompt here. Parsing a label, analysing a week, suggesting a meal and evaluating a plateau need different context and different output rules, and separate schemas make each one testable.</p><p>Next: meal planning, food-photo estimation, an Apple Watch companion and faster logging from the Home Screen.</p></div></section>
+        <section id="gallery" data-reveal>
+          <h2 class="display">Gallery</h2>
+          <div class="gallery"><figure class="is-phone"><img src="assets/img/web/fitandfine-dashboard.jpg" alt="FitandFine dashboard with calorie ring, macro bars and streak tracker" loading="lazy"><figcaption>Dashboard: calories, macros, streak</figcaption></figure><figure class="is-phone"><img src="assets/img/web/fitandfine-foodlog.jpg" alt="FitandFine food log grouped into breakfast, lunch, dinner and snack" loading="lazy"><figcaption>Food log by meal, with macro chips</figcaption></figure><figure class="is-phone"><img src="assets/img/web/fitandfine-coach.jpg" alt="FitCoach answering a question about protein using the user's own logs" loading="lazy"><figcaption>FitCoach, grounded in your own logs</figcaption></figure><figure class="is-phone"><img src="assets/img/web/fitandfine-analytics.jpg" alt="FitandFine analytics with 30-day averages, calorie trend and macro split" loading="lazy"><figcaption>Analytics: trend and macro split</figcaption></figure></div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <section class="next-project">
+    <div class="container" style="position:relative">
+      <div class="art" style="right: 2%; top: 10%; width: min(26vw, 300px); aspect-ratio: 520/420; z-index: -1;"><svg viewBox="0 0 520 420" class="constellation" aria-hidden="true"><line class="edge" x1="480" y1="194" x2="361" y2="295"/><line class="edge" x1="480" y1="194" x2="431" y2="73"/><line class="edge" x1="361" y1="295" x2="206" y2="350"/><line class="edge" x1="129" y1="58" x2="68" y2="110"/><line class="edge" x1="129" y1="58" x2="134" y2="69"/><line class="edge" x1="307" y1="74" x2="431" y2="73"/><line class="edge" x1="307" y1="74" x2="411" y2="39"/><line class="edge" x1="206" y1="350" x2="68" y2="110"/><line class="edge" x1="431" y1="73" x2="411" y2="39"/><line class="edge" x1="68" y1="110" x2="134" y2="69"/><circle class="node" cx="480" cy="194" r="3.5"/><circle class="node" cx="361" cy="295" r="3.5"/><circle class="node is-accent" cx="129" cy="58" r="4"/><circle class="node" cx="307" cy="74" r="3"/><circle class="node" cx="206" cy="350" r="2.5"/><circle class="node" cx="431" cy="73" r="3.5"/><circle class="node" cx="68" cy="110" r="3"/><circle class="node" cx="411" cy="39" r="3.5"/><circle class="node" cx="134" cy="69" r="3.5"/></svg></div>
+      <a href="FitForm.html">
+        <span class="mono">Next project</span>
+        <span class="display h-section">FitForm <svg><use href="#i-arrow-right"/></svg></span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>© <span data-year>2026</span> Designed and built by Aditya Sidham in Los Angeles.</p>
+    <span class="clock" data-clock>Los Angeles</span>
+    <nav aria-label="Footer">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#about">About</a>
+      <a href="assets/resume/Aditya_Sidham_Resume.pdf" target="_blank" rel="noopener">Résumé</a>
+    </nav>
+  </div>
+</footer>
+
+<dialog class="lightbox" id="lightbox" aria-label="Image preview">
+  <button class="icon-btn close" type="button" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <img src="" alt="">
+</dialog>
+<a class="icon-btn to-top" href="#top" aria-label="Back to top"><svg><use href="#i-arrow-up"/></svg></a>
+<script src="assets/js/main.js?v=20260914e" defer></script>
+</body>
+</html>

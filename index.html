@@ -1,1106 +1,636 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aditya Sidham | Applied AI, iOS & Backend Engineer</title>
+  <meta name="description" content="Portfolio of Aditya Sidham, a USC Applied Data Science student building AI-powered iOS products, backend systems, computer vision, and IoT projects.">
+  <meta name="theme-color" content="#F6F7F2">
+  <meta property="og:title" content="Aditya Sidham - Building intelligent systems from input to impact">
+  <meta property="og:description" content="Applied AI, native iOS, production backends, computer vision, and hardware projects built with curiosity and a practical engineering mindset.">
+  <meta property="og:image" content="assets/img/web/aditya-la.jpg">
+  <meta property="og:type" content="website">
 
-  <title>Aditya's Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
-  <!-- Favicons -->
-  <link href="assets/img/AdiportfolioLogo.png" rel="icon">
-  <link href="assets/img/AdiportfolioLogo.png" rel="apple-touch-icon">
-
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/css/timelinecss.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/fontawesome-free-6.5.2-web/css/all.min.css" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-
-  <!-- =======================================================
-  * Template Name: DevFolio
-  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  * Updated: Mar 17 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=20260914e">
+  <script>
+    // Prevent theme flash before main.js runs
+    (function(){try{var t=localStorage.getItem('theme');if(t==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();
+  </script>
 </head>
-
 <body>
-
-<!-- ======= Header ======= -->
-<header id="header" class="fixed-top">
-  <div class="container d-flex align-items-center justify-content-between">
-
-    <h1 class="logo"><a href="index.html">Aditya's Portfolio</a></h1>
-    <!-- Uncomment below if you prefer to use an image logo -->
-    <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-    <nav id="navbar" class="navbar">
-      <ul>
-        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-        <li><a class="nav-link scrollto" href="#about">About</a></li>
-        <li><a class="nav-link scrollto" href="#services">Highlights</a></li>
-        <li><a class="nav-link scrollto " href="#work">Projects and Internship</a></li>
-        <li><a class="nav-link scrollto " href="#blog">Academics</a></li>
-
-
-        <!--          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>-->
-        <!--            <ul>-->
-        <!--              <li><a href="#">Drop Down 1</a></li>-->
-        <!--              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>-->
-        <!--                <ul>-->
-        <!--                  <li><a href="#">Deep Drop Down 1</a></li>-->
-        <!--                  <li><a href="#">Deep Drop Down 2</a></li>-->
-        <!--                  <li><a href="#">Deep Drop Down 3</a></li>-->
-        <!--                  <li><a href="#">Deep Drop Down 4</a></li>-->
-        <!--                  <li><a href="#">Deep Drop Down 5</a></li>-->
-        <!--                </ul>-->
-        <!--              </li>-->
-        <!--              <li><a href="#">Drop Down 2</a></li>-->
-        <!--              <li><a href="#">Drop Down 3</a></li>-->
-        <!--              <li><a href="#">Drop Down 4</a></li>-->
-        <!--            </ul>-->
-        <!--          </li>-->
-        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        <li style="margin-left: 20px;"><a class="nav-link scrollto "> Dark Mode</a></li>
-      </ul>
-
-      <i class="bi bi-list mobile-nav-toggle"></i>
-    </nav><!-- .navbar -->
-
-    <div class="dark-mode-toggle">
-
-
-
-
-      <label class="switch">
-
-        <input type="checkbox" id="darkModeSwitch">
-        <span class="slider round"></span>
-
-      </label>
-    </div>
-  </div>
-</header><!-- End Header -->
-
-<!-- ======= Hero Section ======= -->
-<div id="hero" class="hero route bg-image" style="background-image: url(assets/img/Aditya_Climbing.jpg)">
-  <div class="overlay-itro"></div>
-  <div class="hero-content display-table">
-    <div class="table-cell">
-
-      <!--<p class="display-6 color-d">Hello, world!</p>-->
-      <h1 class="hero-title mb-4">I am Aditya Sidham</h1>
-      <p class="hero-subtitle"><span class="typed" data-typed-items=" Data Science Grad at USC, CS UnderGrad, Development , IOT , Electronics"></span></p>
-      <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
-
-    </div>
-  </div>
-</div><!-- End Hero Section -->
-
-<main id="main">
-
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about-mf sect-pt4 route">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="box-shadow-full">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="row">
-                  <div class="col-sm-6 col-md-5">
-                    <div class="about-img">
-                      <img src="assets/img/Aditya_Photo.jpg" class="img-fluid rounded b-shadow-a" alt="">
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-7">
-                    <div class="about-info">
-
-                      <p><span class="w-title">Name: </span> <span class="w-title"> Aditya Abhay Sidham</span></p>
-                      <p><span class="w-title">Profile: </span> <span class="w-title"> Master's Student at USC</span></p>
-                      <p><span class="w-title">Major: </span> <span class="w-title"> Applied Data Science</span></p>
-                      <p><span class="w-title">Email: </span> <span class="w-title"> aditya1sidham@gmail.com</span></p>
-                      <p><span class="w-title" >USC Email: </span> <span class="w-title"> sidham@usc.edu</span></p>
-                      <p><span class="w-title" >Phone: </span> <span class="w-title"> +1 (213) 245 8758</span></p>
-                      <p><span class="w-title" >Alt Phone: </span> <span class="w-title"> +91 836 971 2421</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="skill-mf">
-                  <p class="w-title"><b>Skills</b></p>
-                  <span>Java</span> <span class="pull-right">80%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <span>Python</span> <span class="pull-right">80%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <span>SQL</span> <span class="pull-right">90%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <span>SpringBoot</span> <span class="pull-right">65%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="about-me pt-4 pt-md-0">
-                  <div class="title-box-2">
-                    <h5 class="title-left">
-                      About me
-                    </h5>
-                  </div>
-                  <p class="lead">
-                    Hey! I’m Aditya Sidham, currently pursuing my Master’s in Applied Data Science at USC. I’ve always been someone who enjoys figuring things out — whether it’s through code, data, or just asking the right questions.
-
-
-
-
-                  </p>
-                  <p class="lead">
-                  I’m genuinely curious about how technology works and how it can be used to solve everyday problems. I like to keep learning and improving — not just technically, but also in how I communicate, work with others, and handle challenges.
-                  One thing I really value is being reliable. Whether I’m working on a solo task or part of a team, I try to bring a mix of focus, clarity, and consistency. I don’t believe in doing things just for the sake of it — I care about doing them well and learning something in the process.
-
-                  </p>
-                  <p class="lead">
-                  I enjoy working with people who are open-minded, collaborative, and excited about what they do. I’m not afraid to ask questions, and I don’t mind getting into the details if it means getting things right.
-                  At the end of the day, I just want to keep building — better skills, better solutions, and better connections with people who are also trying to do meaningful work.
-                  </p>
-
-                  <!--                    <div class="socials">-->
-                  <!--                      <ul>-->
-                  <!--                        <li><a href="https://www.linkedin.com/in/adityasidham/"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>-->
-                  <!--                        <li><a href="https://github.com/AdityaSidham"><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>-->
-                  <!--                        <li><a href="https://www.instagram.com/adityasidham/"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>-->
-                  <!--                        <li><a href="https://twitter.com/adityasidham"><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>-->
-
-                  <!--                      </ul>-->
-                  <!--                    </div>-->
-
-                  <div class="social-icons">
-                    <div class="social-block">
-                      <a href="https://www.linkedin.com/in/adityasidham/" target="_blank">
-                        <div class="icon-circle">
-                          <i class="fab fa-linkedin-in"></i>
-                        </div>
-                        <span class="social-label">LinkedIn</span>
-                      </a>
-                    </div>
-                    <div class="social-block">
-                      <a href="https://github.com/adityasidham" target="_blank">
-                        <div class="icon-circle">
-                          <i class="fab fa-github"></i>
-                        </div>
-                        <span class="social-label">GitHub</span>
-                      </a>
-                    </div>
-                    <div class="social-block">
-                      <a href="https://www.instagram.com/adityasidham" target="_blank">
-                        <div class="icon-circle">
-                          <i class="fab fa-instagram"></i>
-                        </div>
-                        <span class="social-label">Instagram</span>
-                      </a>
-                    </div>
-                    <div class="social-block">
-                      <a href="https://twitter.com/adityasidham" target="_blank">
-                        <div class="icon-circle">
-                          <i class="fab fa-twitter"></i>
-                        </div>
-                        <span class="social-label">Twitter</span>
-                      </a>
-                    </div>
-                  </div>
-                  <!--                    <div class="col-md-12 text-center">-->
-                  <!--                      <a href="assets/resume/Aditya%20Sidham%20RESUME.pdf" target="_parent"><button  style="margin-top: 20px"   type="submit" class="button button-a button-big button-rouded">Resume</button>-->
-                  <!--                    </div>-->
-                  <div class="resume-download col-md-12 text-center">
-                    <a href="assets/resume/Aditya Sidham RESUME Latest.pdf" class="btn btn-rounded">Download My Resume</a>
-                  </div>
-
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section><!-- End About Section -->
-
-  <!-- ======= Services Section ======= -->
-  <section id="services" class="services-mf pt-5 route">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12" data-aos="fade-up">
-          <div class="title-box text-center">
-            <h3 class="title-a">
-              Noteworthy Highlights
-            </h3>
-            <p class="subtitle-a">
-              Key Achievements
-            </p>
-            <div class="line-mf"></div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="service-box projects-container">
-            <div class="service-ico">
-              <!--                <span class="ico-circle"><i class="bi bi-briefcase"></i></span>-->
-              <img src="assets/img/CIIA%20logo.jpg" class=" rounded b-shadow-a" alt="">
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">CREATIVE IDEAS & INNOVATIONS IN ACTION : Finalist</h2>
-              <p class="s-description text-center">
-                Finalist in CIIA Contest: Developed Smart Smoke and Fire Alarm System Utilizing GSM and WiFi for Timely Hazard Notifications
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box highlights-container">
-            <div class="service-ico">
-              <!--                <span class="ico-circle"><i class="bi bi-card-checklist"></i></span>-->
-              <img src="assets/img/Sp-robotic-works.jpg" class=" rounded b-shadow-a " alt="">
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">SP Robotics Maker of the Month</h2>
-              <p class="s-description text-center">
-                Designed and Engineered a Versatile Robotic Arm with Servo Motors, Enhanced by Gyroscope for Precise Hand Gesture Tracking.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box highlights-container">
-            <div class="service-ico">
-              <!--                <span class="ico-circle"><i class="bi bi-bar-chart"></i></span>-->
-              <img src="assets/img/HavardBusinessSchoolOnline.png" class="img-fluid rounded b-shadow-a " alt="">
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">HBS Online Certificate : Business Analytics , Sustainable Business Strategy</h2>
-              <p class="s-description text-center">
-                Completed HBS Online gaining comprehensive expertise in data-driven decision-making
-
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="service-box highlights-container">
-            <div class="service-ico">
-              <!--                <span class="ico-circle"><i class="bi bi-bar-chart"></i></span>-->
-              <img src="assets/img/patent.jpg" class="img-fluid rounded b-shadow-a " alt="">
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Patent Published for FitForm Application</h2>
-              <p class="s-description text-center">
-                Filed and Published Patent for FitForm Application,an application that uses AI to detect and correct exercise forms.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="service-box highlights-container">
-            <div class="service-ico">
-              <!--                <span class="ico-circle"><i class="bi bi-bar-chart"></i></span>-->
-              <img src="assets/img/USCLOGO.png" class="img-fluid rounded b-shadow-a " alt="">
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Admitted to University of Southern California</h2>
-              <p class="s-description text-center">
-              Pursuing M.S. in Applied Data Science at a top-ranked U.S. university QS ranking #49 for ADS</p>
-            </div>
-          </div>
-        </div>
-
-
-
-
-        <div class="col-md-4">
-          <div class="service-box highlights-container">
-            <div class="service-ico">
-              <!--                <span class="ico-circle"><i class="bi bi-card-checklist"></i></span>-->
-              <img src="assets/img/GCC_badge_DA_1000x1000%20(1).png" class=" rounded b-shadow-a " alt="">
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Google Data Analytics Professional Certificate</h2>
-              <p class="s-description text-center">
-                Completed a Data Analytics and Visualisation Certificate from Google on Coursera Platform
-              </p>
-            </div>
-          </div>
-        </div>
-
-
-        <!--          <div class="col-md-4">-->
-        <!--            <div class="service-box">-->
-        <!--              <div class="service-ico">-->
-        <!--                <span class="ico-circle"><i class="bi bi-binoculars"></i></span>-->
-        <!--              </div>-->
-        <!--              <div class="service-content">-->
-        <!--                <h2 class="s-title">Responsive Design</h2>-->
-        <!--                <p class="s-description text-center">-->
-        <!--                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,-->
-        <!--                  provident vitae! Magni-->
-        <!--                  tempora perferendis eum non provident.-->
-        <!--                </p>-->
-        <!--              </div>-->
-        <!--            </div>-->
-        <!--          </div>-->
-        <!--          <div class="col-md-4">-->
-        <!--            <div class="service-box">-->
-        <!--              <div class="service-ico">-->
-        <!--                <span class="ico-circle"><i class="bi bi-brightness-high"></i></span>-->
-        <!--              </div>-->
-        <!--              <div class="service-content">-->
-        <!--                <h2 class="s-title">Graphic Design</h2>-->
-        <!--                <p class="s-description text-center">-->
-        <!--                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,-->
-        <!--                  provident vitae! Magni-->
-        <!--                  tempora perferendis eum non provident.-->
-        <!--                </p>-->
-        <!--              </div>-->
-        <!--            </div>-->
-        <!--          </div>-->
-        <!--          <div class="col-md-4">-->
-        <!--            <div class="service-box">-->
-        <!--              <div class="service-ico">-->
-        <!--                <span class="ico-circle"><i class="bi bi-calendar4-week"></i></span>-->
-        <!--              </div>-->
-        <!--              <div class="service-content">-->
-        <!--                <h2 class="s-title">Marketing Services</h2>-->
-        <!--                <p class="s-description text-center">-->
-        <!--                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,-->
-        <!--                  provident vitae! Magni-->
-        <!--                  tempora perferendis eum non provident.-->
-        <!--                </p>-->
-        <!--              </div>-->
-        <!--            </div>-->
-        <!--          </div>-->
-      </div>
-
-    </div>
-
-  </section><!-- End Services Section -->
-
-  <!-- ======= Counter Section ======= -->
-  <!--
-  <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
-    <div class="overlay-mf"></div>
-    <div class="container position-relative">
-      <div class="row">
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="bi bi-check"></i></span>
-            </div>
-            <div class="counter-num">
-              <p data-purecounter-start="0" data-purecounter-end="450" data-purecounter-duration="1" class="counter purecounter"></p>
-              <span class="counter-text">WORKS COMPLETED</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
-            </div>
-            <div class="counter-num">
-              <p data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="counter purecounter"></p>
-              <span class="counter-text">YEARS OF EXPERIENCE</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="bi bi-people"></i></span>
-            </div>
-            <div class="counter-num">
-              <p data-purecounter-start="0" data-purecounter-end="550" data-purecounter-duration="1" class="counter purecounter"></p>
-              <span class="counter-text">TOTAL CLIENTS</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="bi bi-award"></i></span>
-            </div>
-            <div class="counter-num">
-              <p data-purecounter-start="0" data-purecounter-end="48" data-purecounter-duration="1" class="counter purecounter"></p>
-              <span class="counter-text">AWARD WON</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-   End Counter Section
--->
-  <!-- ======= Portfolio Section ======= -->
-  <section id="work" class="projects-mf pt-5 route">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12" data-aos="fade-up">
-          <div class="title-box text-center">
-            <h3 class="title-a">
-              Projects and Internships
-            </h3>
-            <p class="subtitle-a">
-              Hands-On Experiences:
-            </p>
-            <div class="line-mf"></div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 ">
-          <div class="work-box projects-container">
-            <a href="assets/img/OpenCV.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-              <div class="work-img">
-                <img src="assets/img/OpenCV.jpg" alt="" class="img-fluid">
-              </div>
-            </a>
-            <div class="work-content">
-              <div class="row">
-                <div class="col-sm-8">
-                  <h2 class="w-title">FitForm: Form Detection for Exercising</h2>
-                  <div class="w-more">
-                    <span class="w-ctegory">Application</span> <!-- <span class="w-date">18 Sep. 2018</span>-->
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="w-like">
-                    <a href="FitForm.html"> <span class="bi bi-plus-circle"></span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box projects-container">
-            <a href="assets/img/Fire%20and%20Smoke%20project.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-              <div class="work-img">
-                <img src="assets/img/Fire%20and%20Smoke%20project.jpg" alt="" class="img-fluid">
-              </div>
-            </a>
-            <div class="work-content">
-              <div class="row">
-                <div class="col-sm-8">
-                  <h2 class="w-title">Fire & smoke detection Using machine learning</h2>
-                  <div class="w-more">
-                    <span class="w-ctegory">Project</span>
-                    <!--                      <span class="w-date">18 Sep. 2018</span>-->
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="w-like">
-                    <a href="FireandSmokeDetectionPage.html"> <span class="bi bi-plus-circle"></span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box projects-container">
-            <a href="assets/img/Internship-at-Tata-Consultancy-Services.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-              <div class="work-img">
-                <img src="assets/img/Internship-at-Tata-Consultancy-Services.jpg" alt="" class="img-fluid">
-              </div>
-            </a>
-            <div class="work-content">
-              <div class="row">
-                <div class="col-sm-8">
-                  <h2 class="w-title">TCS Internship : Front End Development Intern</h2>
-                  <div class="w-more">
-                    <span class="w-ctegory">Front End Intern</span> / <span class="w-date">26 Jan. 2024</span>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="w-like">
-                    <a href="FaceandHanddetection.html"> <span class="bi bi-plus-circle"></span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box projects-container">
-            <a href="assets/img/AcesInvensys.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-              <div class="work-img">
-                <img src="assets/img/AcesInvensys.jpg" alt="" class="img-fluid">
-              </div>
-            </a>
-            <div class="work-content">
-              <div class="row">
-                <div class="col-sm-8">
-                  <h2 class="w-title">Aces Invensys Internship</h2>
-                  <div class="w-more">
-                    <span class="w-ctegory">Data Analysis-IOT Intern</span> / <span class="w-date">1 May. 2023</span>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="w-like">
-                    <a href="FaceandHanddetection.html"> <span class="bi bi-plus-circle"></span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box projects-container">
-            <a href="assets/img/Robot%20arm.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-              <div class="work-img">
-                <img src="assets/img/Robot%20arm.jpg" alt="" class="img-fluid">
-              </div>
-            </a>
-            <div class="work-content">
-              <div class="row">
-                <div class="col-sm-8">
-                  <h2 class="w-title">Robot Arm using Servo</h2>
-                  <div class="w-more">
-                    <span class="w-ctegory">Project</span>
-                    <!--                      / <span class="w-date">18 Sep. 2018</span>-->
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="w-like">
-                    <a href="RoboticArm.html"> <span class="bi bi-plus-circle"></span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box projects-container">
-            <a href="assets/img/Face%20and%20Hand%20detection.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-              <div class="work-img">
-                <img src="assets/img/Face%20and%20Hand%20detection.jpg" alt="" class="img-fluid">
-              </div>
-            </a>
-            <div class="work-content">
-              <div class="row">
-                <div class="col-sm-8">
-                  <h2 class="w-title">Face and Hand Detection using OpenCV</h2>
-                  <div class="w-more">
-                    <span class="w-ctegory">Project</span>
-                    <!--                      / <span class="w-date">18 Sep. 2017</span>-->
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="w-like">
-                    <a href="FaceandHanddetection.html"> <span class="bi bi-plus-circle"></span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section><!-- End Portfolio Section -->
-
-
-  <section id="blog" class="timeline" >
-
-    <!--      <h1>Responsive Timeline</h1>-->
-    <div class="col-sm-12" data-aos="fade-up">
-      <div class="title-box text-center">
-        <h3 class="title-a">
-          Academics
-        </h3>
-        <div class="line-mf"></div>
-      </div>
-      <ul>
-        <li>
-          <div class="content">
-            <h2>
-              <time>Jan 2025</time>
-            </h2>
-            <h3> University of Southern California <br> USC </h3>
-            <h3> Master's in Applied Data Science </h3>
-              <center>
-              <img src="assets/img/usc trojans (2).png" alt="" class="img-fluid">
-            </center>
-          </div>
-        </li>
-        <li>
-        <div class="content">
-            <h2>
-              <time>Sep 2024-Nov 2024</time>
-            </h2>
-            <h3> LTIMindtree <br> Graduate Engineer Trainee </h3>
-            <h3> Full time </h3>
-              <center>
-              <img src="assets/img/LTIMindtree_logo (1).png" alt="" class="img-fluid">
-            </center>
-          </div>
-        </li>
-        <li>
-
-          <div class="content">
-            <h2>
-              <time>May 2024</time>
-            </h2>
-            <h3> DY Patil University <br> Ramrao Adik Institute of Technology </h3>
-            <h3> CGPA: 9.0 , GPA: 3.68 </h3>
-          </div>
-        </li>
-        <li>
-          <div class="content">
-            <h2>
-              <time>May 2024</time>
-            </h2>
-            <h3>TCS Internship <br> Front End Development Intern</h3>
-            <center>
-              <img src="assets/img/tcslogo.png" alt="" class="img-fluid">
-            </center>
-          </div>
-        </li>
-        <li>
-          <div class="content">
-            <h2>
-              <time>May 2023</time>
-            </h2>
-            <h3>Aces Invensys Internship <br> Data Analysis and IOT Intern </h3>
-            <center>
-              <img src="assets/img/AcesInvensys.jpg" alt="" class="img-fluid" style="width: 50%; height: auto;">
-            </center>
-          </div>
-        </li>
-        <li>
-          <div class="content">
-            <h2>
-              <time>Feb 2020</time>
-            </h2>
-            <h3> HSC - Class XII - S.S Junior College, Seawoods - 69% </h3>
-          </div>
-        </li>
-        <li>
-          <div class="content">
-            <h2>
-              <time>March 2018</time>
-            </h2>
-            <h3> SSC - Class X -<br> St.Mary's,Vashi - 83% </h3>
-          </div>
-        </li>
-        <!--        <li>-->
-        <!--          <div class="content">-->
-        <!--            <h2>-->
-        <!--              <time>2007</time>-->
-        <!--            </h2>-->
-        <!--            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit sequi nobis, blanditiis quae dolorem quasi reiciendis odio qui fugit? Officiis quos aspernatur mollitia dolorum pariatur repellendus quaerat dolorem magnam quo.</p>-->
-        <!--          </div>-->
-        <!--        </li>-->
-        <!--        <li>-->
-        <!--          <div class="content">-->
-        <!--            <h2>-->
-        <!--              <time>2004</time>-->
-        <!--            </h2>-->
-        <!--            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel corporis sunt nostrum velit quibusdam neque porro ratione quos dolor libero. Tempore consequatur natus nostrum delectus provident fugiat corporis error ipsa.</p>-->
-        <!--          </div>-->
-        <!--        </li>-->
-      </ul>
-    </div>
-  </section>
-
-
-
-
-
-
-
-
-
-
-
-
-  <!--    &lt;!&ndash; ======= Blog Section ======= &ndash;&gt;-->
-  <!--    <section id="blog" class="blog-mf sect-pt4 route">-->
-  <!--      <div class="container">-->
-  <!--        <div class="row">-->
-  <!--          <div class="col-sm-12">-->
-  <!--            <div class="title-box text-center">-->
-  <!--              <h3 class="title-a">-->
-  <!--                Blog-->
-  <!--              </h3>-->
-  <!--              <p class="subtitle-a">-->
-  <!--                Lorem ipsum, dolor sit amet consectetur adipisicing elit.-->
-  <!--              </p>-->
-  <!--              <div class="line-mf"></div>-->
-  <!--            </div>-->
-  <!--          </div>-->
-  <!--        </div>-->
-  <!--        <div class="row">-->
-  <!--          <div class="col-md-4">-->
-  <!--            <div class="card card-blog">-->
-  <!--              <div class="card-img">-->
-  <!--                <a href="blog-single.html"><img src="assets/img/post-1.jpg" alt="" class="img-fluid"></a>-->
-  <!--              </div>-->
-  <!--              <div class="card-body">-->
-  <!--                <div class="card-category-box">-->
-  <!--                  <div class="card-category">-->
-  <!--                    <h6 class="category">Travel</h6>-->
-  <!--                  </div>-->
-  <!--                </div>-->
-  <!--                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>-->
-  <!--                <p class="card-description">-->
-  <!--                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis-->
-  <!--                  a pellentesque nec,-->
-  <!--                  egestas non nisi.-->
-  <!--                </p>-->
-  <!--              </div>-->
-  <!--              <div class="card-footer">-->
-  <!--                <div class="post-author">-->
-  <!--                  <a href="#">-->
-  <!--                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">-->
-  <!--                    <span class="author">Morgan Freeman</span>-->
-  <!--                  </a>-->
-  <!--                </div>-->
-  <!--                <div class="post-date">-->
-  <!--                  <span class="bi bi-clock"></span> 10 min-->
-  <!--                </div>-->
-  <!--              </div>-->
-  <!--            </div>-->
-  <!--          </div>-->
-  <!--          <div class="col-md-4">-->
-  <!--            <div class="card card-blog">-->
-  <!--              <div class="card-img">-->
-  <!--                <a href="blog-single.html"><img src="assets/img/post-2.jpg" alt="" class="img-fluid"></a>-->
-  <!--              </div>-->
-  <!--              <div class="card-body">-->
-  <!--                <div class="card-category-box">-->
-  <!--                  <div class="card-category">-->
-  <!--                    <h6 class="category">Web Design</h6>-->
-  <!--                  </div>-->
-  <!--                </div>-->
-  <!--                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>-->
-  <!--                <p class="card-description">-->
-  <!--                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis-->
-  <!--                  a pellentesque nec,-->
-  <!--                  egestas non nisi.-->
-  <!--                </p>-->
-  <!--              </div>-->
-  <!--              <div class="card-footer">-->
-  <!--                <div class="post-author">-->
-  <!--                  <a href="#">-->
-  <!--                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">-->
-  <!--                    <span class="author">Morgan Freeman</span>-->
-  <!--                  </a>-->
-  <!--                </div>-->
-  <!--                <div class="post-date">-->
-  <!--                  <span class="bi bi-clock"></span> 10 min-->
-  <!--                </div>-->
-  <!--              </div>-->
-  <!--            </div>-->
-  <!--          </div>-->
-  <!--          <div class="col-md-4">-->
-  <!--            <div class="card card-blog">-->
-  <!--              <div class="card-img">-->
-  <!--                <a href="blog-single.html"><img src="assets/img/post-3.jpg" alt="" class="img-fluid"></a>-->
-  <!--              </div>-->
-  <!--              <div class="card-body">-->
-  <!--                <div class="card-category-box">-->
-  <!--                  <div class="card-category">-->
-  <!--                    <h6 class="category">Web Design</h6>-->
-  <!--                  </div>-->
-  <!--                </div>-->
-  <!--                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>-->
-  <!--                <p class="card-description">-->
-  <!--                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis-->
-  <!--                  a pellentesque nec,-->
-  <!--                  egestas non nisi.-->
-  <!--                </p>-->
-  <!--              </div>-->
-  <!--              <div class="card-footer">-->
-  <!--                <div class="post-author">-->
-  <!--                  <a href="#">-->
-  <!--                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">-->
-  <!--                    <span class="author">Morgan Freeman</span>-->
-  <!--                  </a>-->
-  <!--                </div>-->
-  <!--                <div class="post-date">-->
-  <!--                  <span class="bi bi-clock"></span> 10 min-->
-  <!--                </div>-->
-  <!--              </div>-->
-  <!--            </div>-->
-  <!--          </div>-->
-  <!--        </div>-->
-  <!--      </div>-->
-  <!--    </section>&lt;!&ndash; End Blog Section &ndash;&gt;-->
-
-  <section id="funfact" class="paralax-mf sect-mt4 route">
-    <div class="container">
-
-        <div class="col-sm-12" data-aos="fade-up">
-          <div class="title-box text-center">
-            <h3 class="title-a">Random FunFact!</h3>
-            <div class="line-mf"></div>
-          </div>
-          <div id="funfact-box" class=" text-center p-4 ">
-            <p id="random-funfact" class="box-shadow-full funfact-text">Loading a fun fact...</p>
-          </div>
-        </div>
-
-    </div>
-  </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- ======= Contact Section ======= -->
-  <section id="contact" class="paralax-mf  sect-mt4 route">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="contact-mf">
-
-            <div class="row">
-              <div class="col-md-6">
-                <div class="title-box-2">
-                  <h5 class="title-left">
-                    Send a Message
-                  </h5>
-                </div>
-                <div>
-
-                  <form   action="https://formspree.io/f/mvoejrvb" method="POST" role="form"  > <!--   for php -->
-                    <div class="row">
-                      <div class="col-md-12 mb-3">
-                        <div class="form-group">
-                          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                        </div>
-                      </div>
-                      <div class="col-md-12 mb-3">
-                        <div class="form-group">
-                          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                        </div>
-                      </div>
-                      <div class="col-md-12 mb-3">
-                        <div class="form-group">
-                          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                        </div>
-                      </div>
-                      <div class="col-md-12 text-center my-3">
-                        <!--                            <div class="loading">Loading</div>-->
-                        <!--                            <div class="error-message"></div>-->
-                        <!--                            <div class="sent-message">Your message has been sent. Thank you!</div>-->
-                      </div>
-                      <div class="col-md-12 text-center">
-                        <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
-                      </div>
-                    </div>
-                  </form>
-
-
-
-
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="title-box-2 pt-4 pt-md-0">
-                  <h5 class="title-left">
-                    Get in Touch
-                  </h5>
-                </div>
-                <div class="more-info">
-                  <p class="lead">
-                    Feel free to drop me a Message through the contact form or shoot me an email directly. Whether you have opportunities to offer, collaboration ideas, or just want to say hello, I'm all ears. Your message is important to me, and I'll make sure to get back to you as soon as possible. Looking forward to hearing from you!
-                  </p>
-                  <ul class="list-ico">
-                    <li><span class="bi bi-geo-alt"></span> Los Angeles, California 90007</li>
-                    <li><span class="bi bi-phone"></span> +1 (213) 245 8758 </li>
-                    <li><span class="bi bi-envelope"></span> aditya1sidham@gmail.com</li>
-                    <li><span class="bi bi-envelope"></span> sidham@usc.edu</li>
-
-                  </ul>
-                </div>
-                <div class="social-icons">
-                  <a href="https://www.linkedin.com/in/adityasidham/" target="_blank">
-                    <div class="icon-circle">
-                      <i class="fab fa-linkedin-in"></i>
-                    </div>
-                  </a>
-                  <a href="https://github.com/adityasidham" target="_blank">
-                    <div class="icon-circle">
-                      <i class="fab fa-github"></i>
-                    </div>
-                  </a>
-                  <a href="https://www.instagram.com/adityasidham" target="_blank">
-                    <div class="icon-circle">
-                      <i class="fab fa-instagram"></i>
-                    </div>
-                  </a>
-                  <a href="https://twitter.com/adityasidham" target="_blank">
-                    <div class="icon-circle">
-                      <i class="fab fa-twitter"></i>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section><!-- End Contact Section -->
-
-</main><!-- End #main -->
-
-<!-- ======= Footer ======= -->
-<footer>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"></div>
+
+<!-- Inline icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 8.4 22.9c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5Z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 2H3.6A1.6 1.6 0 0 0 2 3.6v16.8A1.6 1.6 0 0 0 3.6 22h16.8a1.6 1.6 0 0 0 1.6-1.6V3.6A1.6 1.6 0 0 0 20.4 2ZM8 19H5V9.5h3V19ZM6.5 8.2a1.7 1.7 0 1 1 0-3.5 1.7 1.7 0 0 1 0 3.5ZM19 19h-3v-4.6c0-1.1 0-2.5-1.5-2.5S12.7 13 12.7 14.3V19h-3V9.5h2.9v1.3a3.2 3.2 0 0 1 2.8-1.5c3 0 3.6 2 3.6 4.6V19Z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.75" fill="currentColor"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 3h3l-7.1 8.2L21.8 21h-6.4l-5-6.4L4.6 21h-3l7.6-8.7L1.5 3H8l4.5 5.9L17.5 3Zm-1.1 16.2h1.7L7.7 4.7H5.9l10.5 14.5Z"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 7 5-3 5 3-1.5-7"/></symbol>
+    <symbol id="i-patent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h6M9 17h6"/><circle cx="9.5" cy="9.5" r="1.25"/></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c4.4 0 7-3 7-7 0-3.5-2-5.6-3.5-7.5-.4 2-1.4 3-2.5 3.5 0-3-1-6-4-8 0 3-1.5 4.5-3 6.5S5 13 5 15c0 4 2.6 7 7 7Z"/><path d="M12 22c-1.7 0-3-1.4-3-3 0-1.7 1.3-2.6 3-4.5 1.7 1.9 3 2.8 3 4.5 0 1.6-1.3 3-3 3Z"/></symbol>
+    <symbol id="i-bot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 8V4M9 4h6M2 13h2M20 13h2"/><circle cx="9" cy="14" r="1" fill="currentColor"/><circle cx="15" cy="14" r="1" fill="currentColor"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m2 9 10-5 10 5-10 5L2 9Z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5M22 9v6"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 12h18"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 4l-4 16"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 13 9 5 9-5M3 18l9 5 9-5"/></symbol>
+    <symbol id="i-database" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></symbol>
+    <symbol id="i-sparkles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3Z"/><path d="M19 17l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7.7-2ZM5 3l.5 1.5L7 5l-1.5.5L5 7l-.5-1.5L3 5l1.5-.5L5 3Z"/></symbol>
+    <symbol id="i-mountain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m3 20 6-11 4 6 2-3 6 8H3Z"/><circle cx="17" cy="6" r="2"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0 5 5L21 9.9A6 6 0 0 1 13.1 3L14.7 6.3ZM10.5 13.5 3.8 20.2a1.8 1.8 0 0 0 2.5 2.5l6.7-6.7"/></symbol>
+    <symbol id="i-message" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 21l1.9-5.4A8 8 0 1 1 21 12Z"/></symbol>
+  </defs>
+</svg>
+
+<!-- ===== Navigation ===== -->
+<header class="nav">
   <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="copyright-box">
-          <p class="copyright">&copy; Made by <strong>Aditya Sidham</strong> with love <i class="fa-solid fa-heart"></i></p>
-          <div class="credits">
-            <!--
-            All the links in the footer should remain intact.
-            You can delete the links only if you purchased the pro version.
-            Licensing information: https://bootstrapmade.com/license/
-            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
-          -->
-            Made using <a href="https://bootstrapmade.com/">Bootstrap</a>
+    <a class="brand" href="#top" aria-label="Aditya Sidham — home"><span class="mark" aria-hidden="true">AS</span>Aditya Sidham</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#training">Training</a>
+      <a href="#highlights">Highlights</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+        <svg class="sun"><use href="#i-sun"/></svg>
+        <svg class="moon"><use href="#i-moon"/></svg>
+      </button>
+      <a class="btn btn--sm" href="assets/resume/Aditya_Sidham_Resume.pdf" target="_blank" rel="noopener" data-magnetic="0.18">Résumé <svg><use href="#i-download"/></svg></a>
+      <button class="icon-btn menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu">
+  <ol>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#training">Training</a></li>
+    <li><a href="#highlights">Highlights</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+  <div class="mm-foot">
+    <a class="btn" href="assets/resume/Aditya_Sidham_Resume.pdf" target="_blank" rel="noopener">View résumé <svg><use href="#i-download"/></svg></a>
+    <a class="icon-btn" href="https://www.linkedin.com/in/adityasidham/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
+    <a class="icon-btn" href="https://github.com/adityasidham" target="_blank" rel="noopener" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
+  </div>
+</div>
+
+<main id="top">
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="hero" aria-label="Introduction">
+    <div class="dotfield" aria-hidden="true"></div>
+    <div class="art" style="right: -4%; top: -6%; width: min(34vw, 440px); aspect-ratio: 520/420; z-index: -1;"><svg viewBox="0 0 520 420" class="constellation" aria-hidden="true"><line class="edge" x1="238" y1="232" x2="264" y2="241"/><line class="edge" x1="238" y1="232" x2="331" y2="252"/><line class="edge" x1="455" y1="198" x2="320" y2="315"/><line class="edge" x1="455" y1="198" x2="349" y2="45"/><line class="edge" x1="455" y1="198" x2="482" y2="377"/><line class="edge" x1="455" y1="198" x2="331" y2="252"/><line class="edge" x1="264" y1="241" x2="320" y2="315"/><line class="edge" x1="264" y1="241" x2="331" y2="252"/><line class="edge" x1="115" y1="214" x2="73" y2="139"/><line class="edge" x1="115" y1="214" x2="72" y2="321"/><line class="edge" x1="115" y1="214" x2="44" y2="197"/><line class="edge" x1="320" y1="315" x2="482" y2="377"/><line class="edge" x1="320" y1="315" x2="331" y2="252"/><line class="edge" x1="73" y1="139" x2="102" y2="35"/><line class="edge" x1="73" y1="139" x2="117" y2="117"/><line class="edge" x1="73" y1="139" x2="44" y2="197"/><line class="edge" x1="72" y1="321" x2="44" y2="197"/><line class="edge" x1="349" y1="45" x2="273" y2="51"/><line class="edge" x1="102" y1="35" x2="117" y2="117"/><line class="edge" x1="273" y1="51" x2="117" y2="117"/><circle class="node" cx="238" cy="232" r="3.5"/><circle class="node" cx="455" cy="198" r="2.5"/><circle class="node" cx="264" cy="241" r="3.5"/><circle class="node" cx="115" cy="214" r="2.5"/><circle class="node" cx="320" cy="315" r="3.5"/><circle class="node" cx="73" cy="139" r="3"/><circle class="node" cx="72" cy="321" r="3"/><circle class="node is-accent" cx="349" cy="45" r="4"/><circle class="node" cx="482" cy="377" r="2.5"/><circle class="node" cx="331" cy="252" r="3.5"/><circle class="node" cx="102" cy="35" r="2.5"/><circle class="node" cx="273" cy="51" r="3"/><circle class="node" cx="117" cy="117" r="3.5"/><circle class="node" cx="44" cy="197" r="3"/><text class="label" x="359" y="37">pose · 33 pts</text></svg></div>
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-eyebrow" data-load>
+          <span class="status"><span class="ping" aria-hidden="true"></span> M.S. Applied Data Science · USC · Los Angeles</span>
+        </div>
+        <h1 class="display h-hero hero-title">
+          <span class="line"><span>Pushing the limits of</span></span>
+          <span class="line"><span><em>multi-agent AI</em> workflows</span></span>
+          <span class="line"><span>with the same discipline</span></span>
+          <span class="line"><span>it takes to train for</span></span>
+          <span class="line"><span>the next big race.</span></span>
+        </h1>
+        <p class="hero-copy" data-load style="--d:320ms">
+          I'm <strong>Aditya Sidham</strong>. Computer vision and applied AI are what I love working on, because the interesting part starts when a system stops recording the world and starts understanding it. I've turned that into a patented form‑correction coach, a four‑agent nutrition app, and a tool that lets anyone query a database in plain English. My ambition is simple: ship AI products people actually rely on, and keep getting better at the craft.
+        </p>
+        <div class="hero-cta" data-load style="--d:440ms">
+          <a class="btn" href="#work" data-magnetic="0.2">Explore my work <svg><use href="#i-arrow-down"/></svg></a>
+          <a class="btn btn--ghost" href="#contact" data-magnetic="0.2">Start a conversation <svg><use href="#i-arrow-up-right"/></svg></a>
+          <div class="socials">
+            <a class="icon-btn" href="https://github.com/adityasidham" target="_blank" rel="noopener" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
+            <a class="icon-btn" href="https://www.linkedin.com/in/adityasidham/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
           </div>
         </div>
       </div>
+
+      <figure class="hero-figure vf">
+        <span class="vf-b" aria-hidden="true"></span>
+        <span class="vf-tag" aria-hidden="true"><i></i> Baldwin Hills · 0.0 mi to go</span>
+        <div class="frame">
+          <img src="assets/img/web/aditya-la.jpg" alt="Aditya Sidham standing on a trail above Los Angeles, the downtown skyline and San Gabriel mountains behind him" width="1104" height="1380" fetchpriority="high">
+          <div class="detect" aria-hidden="true">
+            <div class="detect-box is-person"><i></i>
+              <span class="detect-label">person · <b>SWE 100%</b></span>
+            </div>
+          </div>
+        </div>
+        <figcaption class="caption" data-load style="--d:700ms">
+          <span class="mono">Based in</span>
+          <span>Los Angeles, California</span>
+        </figcaption>
+        <div class="badge" aria-hidden="true">
+          <svg viewBox="0 0 100 100"><defs><path id="circ" d="M50 50 m-36 0 a36 36 0 1 1 72 0 a36 36 0 1 1 -72 0"/></defs><text font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="2.2" fill="currentColor"><textPath href="#circ">OPEN TO WORK · 2026 · AI · IOS · </textPath></text></svg>
+        </div>
+      </figure>
     </div>
+
+    <div class="container hero-foot" data-load style="--d:800ms">
+      <span class="scroll-hint">Scroll <svg><use href="#i-arrow-down"/></svg></span>
+      <div class="marquee mono" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Applied AI</span><span>Computer vision</span><span>Native iOS</span><span>Backend systems</span><span>LLM agents</span><span>IoT & hardware</span>
+          <span>Applied AI</span><span>Computer vision</span><span>Native iOS</span><span>Backend systems</span><span>LLM agents</span><span>IoT & hardware</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Selected work ===== -->
+  <section class="section" id="work" aria-labelledby="work-title">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-index" aria-hidden="true">01</span>
+        <div data-reveal>
+          <p class="mono kicker">Selected work</p>
+          <h2 class="display h-section" id="work-title">Products I've taken from an idea to a <em>working system.</em></h2>
+        </div>
+        <p class="lede" data-reveal style="--d:120ms">My projects start with a practical question. Can a camera coach exercise form? Can a database understand someone who doesn't know SQL? Can nutrition tracking respond to real behaviour? I answer by building the full loop, then fixing the parts that break in real use.</p>
+      </div>
+
+
+      <!-- Flagship showcase: FitandFine -->
+      <section class="showcase" aria-labelledby="ff-title" data-reveal>
+        <div class="showcase-head">
+          <div>
+            <p class="mono kicker"><span class="pill-flag">Flagship</span> AI + native iOS · 2026</p>
+            <h3 class="display" id="ff-title">FitandFine</h3>
+            <p class="showcase-lede">A nutrition app that learns from what you <em>actually</em> do. Solo‑built: the SwiftUI app, the FastAPI backend, the OCR pipeline and a four‑agent Claude layer that turns a label photo into a plan you can argue with.</p>
+          </div>
+          <a class="btn" href="FitandFine.html" data-magnetic="0.18">Read the case study <svg><use href="#i-arrow-up-right"/></svg></a>
+        </div>
+
+        <div class="showcase-body">
+          <div class="stage">
+            <div class="stage-dots" aria-hidden="true"></div>
+            <div class="phone">
+              <div class="phone-screen">
+                <img src="assets/img/web/fitandfine-dashboard.jpg" alt="FitandFine dashboard: calorie ring at 0 of 2000 kcal, protein, carb and fat bars, and a weekly streak row" width="440" height="1022" data-screen="dashboard" class="is-live" loading="lazy">
+                <img src="assets/img/web/fitandfine-foodlog.jpg" alt="FitandFine food log grouped into breakfast, lunch, dinner and snack with per-item macro chips" width="440" height="1022" data-screen="foodlog" loading="lazy">
+                <img src="assets/img/web/fitandfine-coach.jpg" alt="FitCoach answering a protein question using the user's own logged data" width="440" height="1022" data-screen="coach" loading="lazy">
+                <img src="assets/img/web/fitandfine-analytics.jpg" alt="FitandFine analytics: 30-day averages, calorie trend bars against goal, and a macro split chart" width="440" height="1022" data-screen="analytics" loading="lazy">
+              </div>
+            </div>
+          </div>
+
+          <div class="showcase-side">
+            <div class="screen-tabs" role="tablist" aria-label="FitandFine screens">
+              <button type="button" role="tab" aria-selected="true" aria-controls="ff-stage" data-target="dashboard" class="is-active">
+                <svg aria-hidden="true"><use href="#i-chart"/></svg>
+                <span><b>Dashboard</b>Calories, macros, streak</span>
+              </button>
+              <button type="button" role="tab" aria-selected="false" aria-controls="ff-stage" data-target="foodlog">
+                <svg aria-hidden="true"><use href="#i-layers"/></svg>
+                <span><b>Food log</b>Barcode, OCR, by meal</span>
+              </button>
+              <button type="button" role="tab" aria-selected="false" aria-controls="ff-stage" data-target="coach">
+                <svg aria-hidden="true"><use href="#i-sparkles"/></svg>
+                <span><b>FitCoach</b>Four Claude agents</span>
+              </button>
+              <button type="button" role="tab" aria-selected="false" aria-controls="ff-stage" data-target="analytics">
+                <svg aria-hidden="true"><use href="#i-eye"/></svg>
+                <span><b>Analytics</b>Trend and macro split</span>
+              </button>
+            </div>
+
+            <dl class="showcase-stats">
+              <div><dt>Barcode to food card</dt><dd>&lt;500<span>ms</span></dd></div>
+              <div><dt>USDA foods indexed</dt><dd>50k<span>+</span></dd></div>
+              <div><dt>Label OCR accuracy</dt><dd>85<span>%+</span></dd></div>
+              <div><dt>Claude agents</dt><dd>4<span>orchestrated</span></dd></div>
+            </dl>
+
+            <ul class="stack showcase-stack">
+              <li>SwiftUI</li><li>SwiftData</li><li>HealthKit</li><li>FastAPI</li><li>PostgreSQL</li><li>Redis</li><li>Celery</li><li>Claude API</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="work-grid" data-stagger="90">
+        <a class="work-card is-wide" href="FitForm.html" data-reveal>
+          <div class="media">
+            <span class="tag"><svg><use href="#i-patent"/></svg> Patent published</span>
+            <img src="assets/img/web/fitform-cover.jpg" alt="FitForm counting dumbbell reps with a pose skeleton overlaid on the webcam feed" width="638" height="508" loading="lazy" style="transform: translateY(var(--py, 0)) scale(1.08)" data-parallax="16">
+            <span class="cta" aria-hidden="true"><svg><use href="#i-arrow-up-right"/></svg></span>
+          </div>
+          <div class="body">
+            <div class="meta"><h3 class="h-project title">FitForm</h3><span class="mono">2024 · Computer vision</span></div>
+            <p class="desc">Real‑time exercise feedback from an ordinary camera. Tracks 33 body landmarks, counts reps only when the form is right, and led to a published patent.</p>
+            <ul class="stack"><li>Python</li><li>MediaPipe</li><li>OpenCV</li><li>TensorFlow</li><li>BlazePose</li></ul>
+          </div>
+        </a>
+
+        <a class="work-card is-wide" href="ChatDB.html" data-reveal>
+          <div class="media is-contain">
+            <span class="tag"><svg><use href="#i-database"/></svg> Team lead · Gemini</span>
+            <img src="assets/img/web/chatdb-cover.svg" alt="Chat-DB turning an English question into a MySQL query" width="800" height="600" loading="lazy">
+            <span class="cta" aria-hidden="true"><svg><use href="#i-arrow-up-right"/></svg></span>
+          </div>
+          <div class="body">
+            <div class="meta"><h3 class="h-project title">Chat‑DB</h3><span class="mono">2025 · Generative AI</span></div>
+            <p class="desc">Ask a database a question in plain English. Schema‑aware prompting keeps the query grounded, a review step keeps the human in control. Roughly 60% faster query construction.</p>
+            <ul class="stack"><li>Python</li><li>Streamlit</li><li>Gemini API</li><li>MySQL</li><li>MongoDB</li></ul>
+          </div>
+        </a>
+
+        <a class="work-card is-third" href="FireandSmokeDetectionPage.html" data-reveal>
+          <div class="media">
+            <span class="tag"><svg><use href="#i-award"/></svg> CIIA finalist</span>
+            <img src="assets/img/web/fire-smoke-cover.jpg" alt="Aditya presenting the SafeSense fire and smoke detection prototype at the CIIA exhibition" width="1400" height="1176" loading="lazy" style="transform: translateY(var(--py, 0)) scale(1.08)" data-parallax="12">
+            <span class="cta" aria-hidden="true"><svg><use href="#i-arrow-up-right"/></svg></span>
+          </div>
+          <div class="body">
+            <div class="meta"><h3 class="h-project title">SafeSense</h3><span class="mono">2023 · IoT</span></div>
+            <p class="desc">A fire alarm that can reach you when you're not there. ESP8266, flame and smoke sensors, alerts over GSM and Wi‑Fi.</p>
+            <ul class="stack"><li>ESP8266</li><li>Arduino</li><li>GSM</li><li>Sensors</li></ul>
+          </div>
+        </a>
+
+        <a class="work-card is-third" href="FaceandHanddetection.html" data-reveal>
+          <div class="media">
+            <span class="tag"><svg><use href="#i-eye"/></svg> Vision + hardware</span>
+            <img src="assets/img/web/face-hand-cover.jpg" alt="Hand landmarks and a face bounding box detected on webcam, driving LEDs through an Arduino" width="638" height="508" loading="lazy" style="transform: translateY(var(--py, 0)) scale(1.08)" data-parallax="12">
+            <span class="cta" aria-hidden="true"><svg><use href="#i-arrow-up-right"/></svg></span>
+          </div>
+          <div class="body">
+            <div class="meta"><h3 class="h-project title">Face & Hand Recognition</h3><span class="mono">2021</span></div>
+            <p class="desc">Computer vision that produces a physical response: count fingers on camera, light the matching LEDs through an Arduino.</p>
+            <ul class="stack"><li>OpenCV</li><li>MediaPipe</li><li>PyFirmata</li><li>Arduino</li></ul>
+          </div>
+        </a>
+
+        <a class="work-card is-third" href="RoboticArm.html" data-reveal>
+          <div class="media">
+            <span class="tag"><svg><use href="#i-bot"/></svg> Maker of the Month</span>
+            <img src="assets/img/web/robotic-arm-cover.jpg" alt="Servo-driven robotic arm built with an Arduino" width="500" height="500" loading="lazy" style="transform: translateY(var(--py, 0)) scale(1.08)" data-parallax="12">
+            <span class="cta" aria-hidden="true"><svg><use href="#i-arrow-up-right"/></svg></span>
+          </div>
+          <div class="body">
+            <div class="meta"><h3 class="h-project title">Gesture‑Controlled Robotic Arm</h3><span class="mono">2018</span></div>
+            <p class="desc">The project that made engineering feel real: a multi‑axis servo arm, later driven by gyroscope hand gestures.</p>
+            <ul class="stack"><li>Arduino</li><li>C/C++</li><li>Servos</li><li>Gyroscope</li></ul>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="section" id="about" aria-labelledby="about-title">
+    <div class="container">
+      <div class="ruler" aria-hidden="true"><span class="tick" style="left:25%"></span><span class="tick" style="left:50%"></span><span class="tick" style="left:75%"></span></div>
+      <div class="about-grid">
+        <div class="about-sticky">
+          <figure class="about-photo vf" data-reveal="scale">
+            <span class="vf-b" aria-hidden="true"></span>
+            <span class="vf-tag" aria-hidden="true"><i></i> Frame 02 · Los Angeles</span>
+            <img src="assets/img/web/aditya-climbing.jpg" alt="Aditya hiking above Los Angeles wearing a 'No off hours' t-shirt" width="1800" height="1350" loading="lazy" style="object-position: 40% 50%">
+            <figcaption class="stamp"><svg><use href="#i-mountain"/></svg> Weekend trails above LA</figcaption>
+          </figure>
+          <ul class="facts" data-reveal style="--d:120ms">
+            <li><span>Now</span><span>M.S. Applied Data Science, USC · expected Dec 2026</span></li>
+            <li><span>Before</span><span>B.Tech Computer Engineering, Data Science specialisation · DY Patil RAIT</span></li>
+            <li><span>Based in</span><span>Los Angeles, California</span></li>
+            <li><span>From</span><span>Mumbai, India</span></li>
+            <li><span>I build with</span><span>AI, iOS, backend systems, data, computer vision, hardware</span></li>
+            <li><span>Off screen</span><span>Strength training, calisthenics, running, long walks that turn into project ideas</span></li>
+          </ul>
+        </div>
+
+        <div class="about-copy">
+          <p class="mono kicker" data-reveal>About</p>
+          <h2 class="display h-section" id="about-title" data-reveal style="--d:60ms">I learn by getting <em>close</em> to the problem.</h2>
+          <div class="prose" data-reveal style="--d:120ms">
+            <p>I've never been satisfied knowing only the part of a system assigned to me. If I'm using a tool, a sensor or a model, I want to know what it's doing, where it fails and how it fits into everything around it. That instinct has taken me across a wide range: Arduino circuits, computer vision, enterprise backends, native iOS and multi‑agent AI systems.</p>
+            <p>My path started with physical computing, debugging with a multimeter as often as a terminal. Computer engineering gave me the software foundations. At TCS and LTM the code sat inside larger operational workflows, so correctness and reliability mattered. At USC I've gone deeper into machine learning, data mining and language systems.</p>
+            <p>FitandFine brings those threads together: a product shaped by something I care about personally, where I own the interface, the backend, the data model, the OCR pipeline and the AI layer at once. That kind of ownership forces me to think about the user and the architecture at the same time, and it's the work I want to keep doing.</p>
+          </div>
+
+          <div class="principles" data-stagger="70">
+            <div class="principle" data-reveal><span class="num">01</span><h4>I build to understand</h4><p>Documentation is a starting point. A working prototype tells me what the real problem is. I get something running early, inspect each layer and improve it with evidence.</p></div>
+            <div class="principle" data-reveal><span class="num">02</span><h4>I think in complete systems</h4><p>A model is only useful if the data reaches it reliably and the result makes sense to a person. I care about the whole path from input to interface.</p></div>
+            <div class="principle" data-reveal><span class="num">03</span><h4>I care about the unglamorous parts</h4><p>Caching, validation, error states, background jobs and offline behaviour decide whether a demo becomes a dependable product. I enjoy that work.</p></div>
+            <div class="principle" data-reveal><span class="num">04</span><h4>I ask questions early</h4><p>I'm comfortable owning a problem, but independence isn't silence. I clarify assumptions, share progress and surface risks before they get expensive.</p></div>
+          </div>
+
+          <div class="skills" data-stagger="60">
+            <div class="skill-row" data-reveal>
+              <h4><svg><use href="#i-sparkles"/></svg> Applied AI & LLMs</h4>
+              <ul class="chips"><li class="chip">Claude API</li><li class="chip">Gemini API</li><li class="chip">Multi‑agent orchestration</li><li class="chip">RAG</li><li class="chip">MCP</li><li class="chip">Prompt design & evals</li></ul>
+            </div>
+            <div class="skill-row" data-reveal>
+              <h4><svg><use href="#i-eye"/></svg> Vision & ML</h4>
+              <ul class="chips"><li class="chip">OpenCV</li><li class="chip">MediaPipe</li><li class="chip">PyTorch</li><li class="chip">TensorFlow</li><li class="chip">Scikit‑learn</li><li class="chip">Pandas & NumPy</li></ul>
+            </div>
+            <div class="skill-row" data-reveal>
+              <h4><svg><use href="#i-code"/></svg> Product & apps</h4>
+              <ul class="chips"><li class="chip">Swift & SwiftUI</li><li class="chip">SwiftData</li><li class="chip">HealthKit</li><li class="chip">AVFoundation</li><li class="chip">React</li><li class="chip">TypeScript</li><li class="chip">Streamlit</li></ul>
+            </div>
+            <div class="skill-row" data-reveal>
+              <h4><svg><use href="#i-layers"/></svg> Backend</h4>
+              <ul class="chips"><li class="chip">Python & FastAPI</li><li class="chip">Java & Spring Boot</li><li class="chip">C# & ASP.NET</li><li class="chip">REST & microservices</li><li class="chip">Celery</li><li class="chip">SQLAlchemy</li></ul>
+            </div>
+            <div class="skill-row" data-reveal>
+              <h4><svg><use href="#i-database"/></svg> Data & cloud</h4>
+              <ul class="chips"><li class="chip">PostgreSQL</li><li class="chip">MySQL</li><li class="chip">SQL Server</li><li class="chip">MongoDB</li><li class="chip">Redis</li><li class="chip">Apache Spark</li><li class="chip">AWS EC2 & S3</li><li class="chip">Docker</li><li class="chip">CI/CD</li></ul>
+            </div>
+            <div class="skill-row" data-reveal>
+              <h4><svg><use href="#i-cpu"/></svg> Hardware</h4>
+              <ul class="chips"><li class="chip">Arduino</li><li class="chip">Raspberry Pi</li><li class="chip">ESP8266</li><li class="chip">MQTT</li><li class="chip">Servo systems</li><li class="chip">Sensor integration</li></ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== Training ===== -->
+  <section class="section training" id="training" aria-labelledby="tr-title">
+    <div class="container">
+      <div class="ruler" aria-hidden="true"><span class="tick" style="left:40%"></span></div>
+      <div class="train-band" data-reveal>
+        <div class="train-copy">
+          <p class="mono kicker">Off the clock</p>
+          <h2 class="display" id="tr-title">Goals you have to <em>earn,</em> one session at a time.</h2>
+          <p>Training made me patient with slow progress and honest about feedback. You can't talk your way around a missed workout or a weak system. You put in the work, measure what happened, and adjust. It's the same loop I run on code.</p>
+
+          <ul class="pr-row">
+            <li><span class="pr-num">5<i>K</i></span><span class="pr-lbl">Tempo</span></li>
+            <li><span class="pr-num">10<i>K</i></span><span class="pr-lbl">Threshold</span></li>
+            <li><span class="pr-num">21.1<i>K</i></span><span class="pr-lbl">Half marathon</span></li>
+          </ul>
+
+          <ul class="train-tags">
+            <li>Strength training</li><li>Calisthenics</li><li>Road running</li>
+          </ul>
+
+          <a class="strava-link" href="https://www.strava.com/athletes/186930143" target="_blank" rel="noopener">
+            <img src="assets/img/web/logos/strava.svg" alt="Strava" width="432" height="91" loading="lazy">
+            <span>Follow the training log</span>
+            <svg aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+          </a>
+        </div>
+
+        <figure class="train-embed">
+          <figcaption class="mono">From the log</figcaption>
+          <div class="embed-shell">
+            <div class="strava-embed-placeholder" data-embed-type="activity" data-embed-id="18911154017" data-style="standard" data-from-embed="false" data-token="xL-W2aGy2o9p_lKdP7hxkcky9lntNrZYB0BRsio5_rc"></div>
+            <noscript><p class="embed-fallback">Enable JavaScript to see the activity, or <a href="https://www.strava.com/athletes/186930143" target="_blank" rel="noopener">open it on Strava</a>.</p></noscript>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Experience ===== -->
+  <section class="section" id="experience" aria-labelledby="exp-title">
+    <div class="container" style="position: relative">
+      <div class="ruler" aria-hidden="true"><span class="tick" style="left:33.3%"></span><span class="tick" style="left:66.6%"></span></div>
+      <div class="art" style="left: -6%; bottom: -4%; width: min(36vw, 420px); aspect-ratio: 520/420; z-index: -1;"><svg viewBox="0 0 520 420" class="constellation" aria-hidden="true"><line class="edge" x1="282" y1="154" x2="265" y2="154"/><line class="edge" x1="282" y1="154" x2="310" y2="181"/><line class="edge" x1="282" y1="154" x2="289" y2="101"/><line class="edge" x1="419" y1="134" x2="489" y2="149"/><line class="edge" x1="419" y1="134" x2="366" y2="191"/><line class="edge" x1="265" y1="154" x2="310" y2="181"/><line class="edge" x1="265" y1="154" x2="265" y2="109"/><line class="edge" x1="221" y1="381" x2="310" y2="181"/><line class="edge" x1="221" y1="381" x2="218" y2="315"/><line class="edge" x1="78" y1="190" x2="133" y2="156"/><line class="edge" x1="78" y1="190" x2="108" y2="186"/><line class="edge" x1="133" y1="156" x2="108" y2="186"/><line class="edge" x1="489" y1="149" x2="366" y2="191"/><line class="edge" x1="310" y1="181" x2="366" y2="191"/><line class="edge" x1="310" y1="181" x2="218" y2="315"/><line class="edge" x1="310" y1="181" x2="340" y2="137"/><line class="edge" x1="366" y1="191" x2="340" y2="137"/><line class="edge" x1="289" y1="101" x2="265" y2="109"/><circle class="node" cx="282" cy="154" r="3"/><circle class="node" cx="419" cy="134" r="3.5"/><circle class="node" cx="265" cy="154" r="2.5"/><circle class="node" cx="221" cy="381" r="3"/><circle class="node" cx="78" cy="190" r="3"/><circle class="node" cx="133" cy="156" r="3.5"/><circle class="node is-accent" cx="489" cy="149" r="4"/><circle class="node" cx="310" cy="181" r="3.5"/><circle class="node" cx="366" cy="191" r="3.5"/><circle class="node" cx="108" cy="186" r="3"/><circle class="node" cx="218" cy="315" r="3"/><circle class="node" cx="289" cy="101" r="3.5"/><circle class="node" cx="340" cy="137" r="2.5"/><circle class="node" cx="265" cy="109" r="3.5"/><text class="label" x="499" y="141">2020 → now</text></svg></div>
+      <div class="section-head">
+        <span class="section-index" aria-hidden="true">03</span>
+        <div data-reveal>
+          <p class="mono kicker">Experience & education</p>
+          <h2 class="display h-section" id="exp-title">Enterprise software, public‑sector systems <em>and IoT.</em></h2>
+        </div>
+        <p class="lede" data-reveal style="--d:120ms">Large delivery teams and small hands‑on projects. Different environments, same expectation: understand the system, make the change carefully, leave it working better than before.</p>
+      </div>
+
+      <div class="timeline" data-stagger="80">
+        <div class="progress" aria-hidden="true"></div>
+
+        <article class="tl-item is-current" data-reveal>
+          <div class="when"><span class="mono">Jan 2025 — Dec 2026</span><span class="pill">Now</span></div>
+          <div>
+            <h3 class="role">M.S. in Applied Data Science</h3>
+            <p class="org">University of Southern California <span class="sep"></span> Los Angeles, CA <span class="sep"></span> GPA 3.52</p>
+            <ul class="notes">
+              <li>Coursework in Natural Language Processing, Machine Learning for Data Science and Foundations of Data Mining.</li>
+              <li>Led the four‑person Chat‑DB team; building FitandFine alongside the degree.</li>
+            </ul>
+          </div>
+          <div class="logo"><img src="assets/img/web/logos/usc.svg" alt="University of Southern California" loading="lazy"></div>
+        </article>
+
+        <article class="tl-item" data-reveal>
+          <div class="when"><span class="mono">Sep 2024 — Dec 2024</span></div>
+          <div>
+            <h3 class="role">Software Engineer</h3>
+            <p class="org">LTM, formerly LTIMindtree <span class="sep"></span> Mumbai, India</p>
+            <ul class="notes">
+              <li>Built C# and ASP.NET backend integration workflows for Otis's enterprise application, spanning service management, dispatch, inventory and reporting.</li>
+              <li>Rebuilt the SQL Server procedures behind IoT fault‑event ingestion and downstream work‑order creation, cutting backend issue‑resolution turnaround by 20%.</li>
+            </ul>
+          </div>
+          <div class="logo"><img src="assets/img/web/logos/ltm.svg" alt="LTM" loading="lazy"></div>
+        </article>
+
+        <article class="tl-item" data-reveal>
+          <div class="when"><span class="mono">Jan 2024 — May 2024</span></div>
+          <div>
+            <h3 class="role">Software Development Intern</h3>
+            <p class="org">Tata Consultancy Services <span class="sep"></span> Navi Mumbai, India</p>
+            <ul class="notes">
+              <li>Developed a full‑stack module for CPMS, the Central Plan Scheme Monitoring project, in Java, Spring Boot, JSP, Servlets and SQL.</li>
+              <li>Automated repeated administrative workflows, reducing manual data‑entry time by 35%, shipped in two‑week Agile sprints.</li>
+            </ul>
+          </div>
+          <div class="logo"><img src="assets/img/web/logos/tcs.png" alt="Tata Consultancy Services" loading="lazy"></div>
+        </article>
+
+        <article class="tl-item" data-reveal>
+          <div class="when"><span class="mono">Jun 2020 — Jun 2024</span></div>
+          <div>
+            <h3 class="role">B.Tech in Computer Engineering, Data Science specialisation</h3>
+            <p class="org">DY Patil Ramrao Adik Institute of Technology <span class="sep"></span> Nerul, Navi Mumbai <span class="sep"></span> GPA 3.68</p>
+            <ul class="notes">
+              <li>Projects across computer vision, IoT and robotics; led the four‑person SafeSense team to the CIIA finals.</li>
+              <li>Built FitForm, which later received a published patent.</li>
+            </ul>
+          </div>
+          <div class="logo"><img src="assets/img/web/logos/dypatil.svg" alt="D Y Patil University, Navi Mumbai" loading="lazy"></div>
+        </article>
+
+        <article class="tl-item" data-reveal>
+          <div class="when"><span class="mono">May 2023 — Jun 2023</span></div>
+          <div>
+            <h3 class="role">IoT Intern</h3>
+            <p class="org">Aces Invensys Technologies <span class="sep"></span> Navi Mumbai, India</p>
+            <ul class="notes">
+              <li>Built a Python and MQTT pipeline that collected live IoT beacon signals and processed them into location estimates.</li>
+              <li>Positioning analytics tracked beacons to within roughly ±10 cm in testing, working with noisy sensor data and calibration.</li>
+            </ul>
+          </div>
+          <div class="logo"><img src="assets/img/web/logos/aces-invensys.svg" alt="Aces Invensys Technologies" loading="lazy"></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Highlights ===== -->
+  <section class="section" id="highlights" aria-labelledby="hl-title">
+    <div class="container" style="position: relative">
+      <div class="ruler" aria-hidden="true"><span class="tick" style="left:50%"></span></div>
+      <div class="art" style="right: -4%; top: -2%; width: min(32vw, 380px); aspect-ratio: 520/420; z-index: -1;"><svg viewBox="0 0 520 420" class="constellation" aria-hidden="true"><line class="edge" x1="48" y1="281" x2="96" y2="197"/><line class="edge" x1="48" y1="281" x2="39" y2="186"/><line class="edge" x1="96" y1="197" x2="39" y2="186"/><line class="edge" x1="339" y1="315" x2="282" y2="302"/><line class="edge" x1="339" y1="315" x2="421" y2="325"/><line class="edge" x1="238" y1="209" x2="201" y2="337"/><line class="edge" x1="238" y1="209" x2="282" y2="302"/><line class="edge" x1="238" y1="209" x2="230" y2="93"/><line class="edge" x1="238" y1="209" x2="203" y2="64"/><line class="edge" x1="238" y1="209" x2="266" y2="209"/><line class="edge" x1="201" y1="337" x2="282" y2="302"/><line class="edge" x1="282" y1="302" x2="421" y2="325"/><line class="edge" x1="282" y1="302" x2="266" y2="209"/><line class="edge" x1="230" y1="93" x2="203" y2="64"/><circle class="node" cx="48" cy="281" r="3.5"/><circle class="node" cx="96" cy="197" r="3.5"/><circle class="node" cx="339" cy="315" r="3"/><circle class="node" cx="238" cy="209" r="3.5"/><circle class="node" cx="39" cy="186" r="2.5"/><circle class="node" cx="201" cy="337" r="3"/><circle class="node is-accent" cx="282" cy="302" r="4"/><circle class="node" cx="230" cy="93" r="2.5"/><circle class="node" cx="421" cy="325" r="2.5"/><circle class="node" cx="203" cy="64" r="3.5"/><circle class="node" cx="266" cy="209" r="2.5"/><text class="label" x="292" y="294">milestones</text></svg></div>
+      <div class="section-head">
+        <span class="section-index" aria-hidden="true">04</span>
+        <div data-reveal>
+          <p class="mono kicker">Highlights</p>
+          <h2 class="display h-section" id="hl-title">A few moments that changed what I thought <em>I could build.</em></h2>
+        </div>
+        <p class="lede" data-reveal style="--d:120ms">A published patent, a flagship product, a national finals, a maker award, and the certificates that taught me to connect technical decisions to business context.</p>
+      </div>
+
+      <div class="hl-grid" data-stagger="70">
+        <article class="hl-card" data-reveal>
+          <div class="top"><span class="hl-icon"><svg><use href="#i-patent"/></svg></span><span class="year">Jan 2025</span></div>
+          <h3>Published patent: FitForm</h3>
+          <p>Application 202421099595, "AI Powered Exercise Tracking and Form Correction System", published 17 January 2025. Real‑time pose landmarks that count reps and check form through a camera.</p>
+          <div class="logo-row"><a class="link" href="FitForm.html">View the case study</a></div>
+        </article>
+        <article class="hl-card" data-reveal>
+          <div class="top"><span class="hl-icon"><svg><use href="#i-sparkles"/></svg></span><span class="year">2026</span></div>
+          <h3>FitandFine: a four‑agent AI system, solo‑built</h3>
+          <p>Label OCR to structured macros at over 85% field accuracy, weekly diet analysis, meal recommendation and a closed‑loop calorie target, all behind a native iOS app.</p>
+          <div class="logo-row"><a class="link" href="FitandFine.html">View the case study</a></div>
+        </article>
+        <article class="hl-card" data-reveal>
+          <div class="top"><span class="hl-icon"><svg><use href="#i-flame"/></svg></span><span class="year">2023</span></div>
+          <h3>CIIA finalist</h3>
+          <p>Led a four‑person team that built SafeSense, an ESP8266 smoke and fire detector with local alarms plus GSM and Wi‑Fi notifications. Selected as a Creative Ideas & Innovations in Action finalist.</p>
+          <div class="logo-row"><img src="assets/img/web/ciia.jpg" alt="CIIA" loading="lazy"><a class="link" href="FireandSmokeDetectionPage.html">Case study</a></div>
+        </article>
+        <article class="hl-card" data-reveal>
+          <div class="top"><span class="hl-icon"><svg><use href="#i-bot"/></svg></span><span class="year">Sep 2018</span></div>
+          <h3>SP Robotics Maker of the Month</h3>
+          <p>Recognised for a servo‑driven robotic arm I designed and programmed, later extended with gyroscope‑based gesture control.</p>
+          <div class="logo-row"><img src="assets/img/web/sp-robotics.jpg" alt="SP Robotic Works" loading="lazy"><a class="link" href="RoboticArm.html">The project</a></div>
+        </article>
+        <article class="hl-card" data-reveal>
+          <div class="top"><span class="hl-icon"><svg><use href="#i-chart"/></svg></span><span class="year">Jun 2024</span></div>
+          <h3>Google Data Analytics Professional Certificate</h3>
+          <p>Data preparation, analysis, visualisation and communicating findings, completed on Coursera.</p>
+          <div class="logo-row"><img src="assets/img/web/google-da.png" alt="Google Career Certificates" loading="lazy"></div>
+        </article>
+        <article class="hl-card" data-reveal>
+          <div class="top"><span class="hl-icon"><svg><use href="#i-briefcase"/></svg></span><span class="year">Jun 2023</span></div>
+          <h3>Harvard Business School Online</h3>
+          <p>Business Analytics and Sustainable Business Strategy. The programs taught me to connect technical decisions to evidence, business context and long‑term trade‑offs.</p>
+          <div class="logo-row"><img src="assets/img/web/hbs.png" alt="Harvard Business School Online" loading="lazy"></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section contact" id="contact" aria-labelledby="contact-title">
+    <div class="container" style="position: relative">
+      <div class="ruler" aria-hidden="true"></div>
+      <div class="rings" aria-hidden="true"><svg viewBox="0 0 400 400" aria-hidden="true"><circle cx="200" cy="200" r="60"/><circle cx="200" cy="200" r="110"/><circle cx="200" cy="200" r="160"/><circle cx="200" cy="200" r="196"/><circle class="n" cx="200" cy="40" r="4"/><circle class="n" cx="310" cy="200" r="3"/></svg></div>
+      <div class="contact-grid">
+        <div>
+          <p class="mono kicker" data-reveal>Contact</p>
+          <h2 class="display h-section" id="contact-title" data-reveal style="--d:60ms">Have a hard problem? <em>I'd like to hear it.</em></h2>
+          <p class="lede muted" data-reveal style="--d:120ms; margin-top:20px">I'm interested in applied AI, software engineering, data and product work where I can take real ownership and keep learning. If you're building something that has to work beyond the demo, tell me what you're trying to solve.</p>
+          <a class="big-mail" href="mailto:sidham@usc.edu" data-reveal style="--d:180ms">sidham@usc.edu <svg><use href="#i-arrow-up-right"/></svg></a>
+          <ul class="contact-meta" data-reveal style="--d:240ms">
+            <li><svg><use href="#i-pin"/></svg> Los Angeles, California</li>
+            <li><svg><use href="#i-phone"/></svg> <a href="tel:+12132458758">+1 (213) 245‑8758</a></li>
+            <li><svg><use href="#i-mail"/></svg> <a href="mailto:aditya1sidham@gmail.com">aditya1sidham@gmail.com</a></li>
+            <li><svg><use href="#i-copy"/></svg> <button class="link" type="button" data-copy="sidham@usc.edu" data-copied="Copied to clipboard">Copy email address</button></li>
+          </ul>
+          <div class="socials" data-reveal style="--d:300ms">
+            <a class="icon-btn" href="https://www.linkedin.com/in/adityasidham/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
+            <a class="icon-btn" href="https://github.com/adityasidham" target="_blank" rel="noopener" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
+            <a class="icon-btn" href="https://www.instagram.com/adityasidham" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#i-instagram"/></svg></a>
+            <a class="icon-btn" href="assets/resume/Aditya_Sidham_Resume.pdf" target="_blank" rel="noopener" aria-label="Download résumé"><svg><use href="#i-download"/></svg></a>
+          </div>
+        </div>
+
+        <form class="form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" data-mail="sidham@usc.edu" novalidate data-reveal style="--d:200ms">
+          <div class="form-row">
+            <div class="field">
+              <label for="f-name">Name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+              <span class="error" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" placeholder="Your email" required>
+              <span class="error" role="alert"></span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-subject">Subject <span>(optional)</span></label>
+            <input id="f-subject" name="subject" type="text" placeholder="What would you like to discuss?">
+          </div>
+          <div class="field">
+            <label for="f-message">Message</label>
+            <textarea id="f-message" name="message" placeholder="Tell me about the role, project, or problem." required></textarea>
+            <span class="error" role="alert"></span>
+          </div>
+          <div class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+          <div class="form-foot">
+            <button class="btn" type="submit" data-magnetic="0.15">Send message <svg><use href="#i-arrow-right"/></svg></button>
+            <p class="form-status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>© <span data-year>2026</span> Designed and built by Aditya Sidham in Los Angeles.</p>
+    <span class="clock" data-clock>Los Angeles</span>
+    <nav aria-label="Footer">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="assets/resume/Aditya_Sidham_Resume.pdf" target="_blank" rel="noopener">Résumé</a>
+    </nav>
   </div>
-</footer><!-- End  Footer -->
+</footer>
 
-<div id="preloader"></div>
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<a class="icon-btn to-top" href="#top" aria-label="Back to top"><svg><use href="#i-arrow-up"/></svg></a>
 
-<!-- Vendor JS Files -->
-<script src="assets/js/Timeline.js"></script>
-<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="assets/vendor/typed.js/typed.umd.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-<!-- Template Main JS File -->
-<script src="assets/js/main.js"></script>
-
-
-
-
-
-
-
-<script>
-  document.addEventListener('DOMContentLoaded', (event) => {
-    const toggleSwitch = document.getElementById('darkModeSwitch');
-    const currentTheme = localStorage.getItem('theme');
-
-    if (currentTheme) {
-      document.body.classList.add(currentTheme);
-      if (currentTheme === 'dark-mode') {
-        toggleSwitch.checked = true;
-        document.querySelectorAll('header, footer, section:not(#hero), .navbar, .about-container, .highlights-container, .projects-container, .contact-container, .card').forEach(el => el.classList.add('dark-mode'));
-      }
-    }
-
-    toggleSwitch.addEventListener('change', function() {
-      if (toggleSwitch.checked) {
-        document.body.classList.add('dark-mode');
-        document.querySelectorAll('header, footer, section:not(#hero), .navbar, .about-container, .highlights-container, .projects-container, .contact-container, .card').forEach(el => el.classList.add('dark-mode'));
-        localStorage.setItem('theme', 'dark-mode');
-      } else {
-        document.body.classList.remove('dark-mode');
-        document.querySelectorAll('header, footer, section:not(#hero), .navbar, .about-container, .highlights-container, .projects-container, .contact-container, .card').forEach(el => el.classList.remove('dark-mode'));
-        localStorage.setItem('theme', '');
-      }
-    });
-  });
-</script>
-
-
-
-
-
-
-<script>
-  document.addEventListener('DOMContentLoaded', (event) => {
-    const funfactBox = document.getElementById('random-funfact');
-
-    fetch('https://api.api-ninjas.com/v1/facts', {
-      headers: {
-        'X-Api-Key': 'szh+nFE3i85fg/IwDi/UcQ==v2OIivMk4Q0WKXcg' // Replace with your actual API key
-      }
-    })
-            .then(response => response.json())
-            .then(data => {
-              funfactBox.textContent = data[0].fact;
-            })
-            .catch(error => {
-              funfactBox.textContent = "Sorry, we couldn't fetch a fun fact at this time. Please try again later.";
-              console.error('Error fetching fun fact:', error);
-            });
-  });
-</script>
-
-
+<script src="https://strava-embeds.com/embed.js" defer></script>
+<script src="assets/js/main.js?v=20260914e" defer></script>
 </body>
-
 </html>
