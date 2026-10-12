@@ -6,7 +6,7 @@ sys.path.insert(0, str(HERE))
 import art
 
 # Bump after any CSS, JS or hero image change so browsers fetch fresh files.
-V = "20261012p"
+V = "20261012q"
 
 # The public address (on the résumé). Canonical links and social cards point here.
 SITE = "https://adityasidham.site/"

@@ -64,13 +64,15 @@ Every project leads with what shipped, my role, and the numbers. Each card opens
       <a href="https://adityasidham.site/FitandFine.html"><img src="assets/img/og/og-fitandfine.jpg" alt="FitandFine case study"></a>
       <h3>FitandFine</h3>
       <sub><b>Flagship, 2026, solo build</b></sub>
-      <p>A native iOS nutrition app that learns from what you actually do. SwiftUI app, FastAPI backend, label OCR and four Claude agents. Barcode to food card in under 500 ms across 50,000+ USDA foods, over 85% label-field accuracy, 85% backend test coverage.</p>
+      <p>A native iOS nutrition app that learns from what you actually do. SwiftUI app, FastAPI backend, label scanning and four AI agents. Barcode to food card in under 500 ms across 50,000+ USDA foods, over 85% label-field accuracy, 85% backend test coverage.</p>
+      <p><a href="https://github.com/AdityaSidham/FitandFine">Code</a> &nbsp;|&nbsp; <a href="https://adityasidham.site/FitandFine.html">Case study</a></p>
     </td>
     <td width="50%" valign="top">
       <a href="https://adityasidham.site/FitForm.html"><img src="assets/img/og/og-fitform.jpg" alt="FitForm case study"></a>
       <h3>FitForm</h3>
       <sub><b>Computer vision, 2024, patent-pending</b></sub>
       <p>A camera that counts a rep only when the form is right. Tracks 33 body landmarks at 25 FPS on a laptop CPU, with 30% fewer false rep counts across 120 annotated clips. Published Indian patent application 202421099595, where I'm a co-applicant.</p>
+      <p><a href="https://github.com/AdityaSidham/FitformAPP">Code</a> &nbsp;|&nbsp; <a href="https://adityasidham.site/FitForm.html">Case study</a></p>
     </td>
   </tr>
   <tr>
@@ -78,7 +80,8 @@ Every project leads with what shipped, my role, and the numbers. Each card opens
       <a href="https://adityasidham.site/ChatDB.html"><img src="assets/img/og/og-chatdb.jpg" alt="Chat-DB case study"></a>
       <h3>Chat-DB</h3>
       <sub><b>LLM application, 2025, team lead of four</b></sub>
-      <p>Ask a database a question in plain English and review the query before it runs. About 60% faster query writing, 92% correct on a 150-question test suite, 12 regressions caught before release.</p>
+      <p>Ask MySQL or MongoDB a question in plain English and see the exact query it ran. About 60% faster query writing, 92% correct on a 150-question test suite, 12 regressions caught before release.</p>
+      <p><a href="https://github.com/AdityaSidham/Chat-DB">Code</a> &nbsp;|&nbsp; <a href="https://adityasidham.site/ChatDB.html">Case study</a></p>
     </td>
     <td width="50%" valign="top">
       <a href="https://adityasidham.site/FireandSmokeDetectionPage.html"><img src="assets/img/og/og-safesense.jpg" alt="SafeSense case study"></a>
