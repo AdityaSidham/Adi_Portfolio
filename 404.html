@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found | Aditya Sidham</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0D1424">
+  <link rel="icon" href="https://adityasidham.site/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112..125,700..800&family=Atkinson+Hyperlegible+Mono:wght@500&family=Atkinson+Hyperlegible+Next:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Self-contained on purpose: a 404 can be served from any path, so it cannot rely on relative assets. -->
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; height: 100%; }
+    body {
+      display: grid; place-items: center; padding: 24px;
+      background: #0D1424 url("https://adityasidham.site/assets/img/hero/hero-poster.jpg") 60% 50% / cover no-repeat;
+      color: #ECE9E1; font-family: "Atkinson Hyperlegible Next", "Helvetica Neue", Arial, sans-serif; font-size: 1.0625rem; line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    body::before { content: ""; position: fixed; inset: 0; background: radial-gradient(ellipse 70% 70% at 50% 50%, rgba(9, 14, 26, .55), rgba(9, 14, 26, .9)); }
+    main { position: relative; width: min(36rem, 100%); text-align: center; }
+    .lock {
+      --c: #7C93FF; position: relative; width: 160px; height: 110px; margin: 0 auto 40px;
+      background:
+        linear-gradient(var(--c), var(--c)) top left / 22px 2px, linear-gradient(var(--c), var(--c)) top left / 2px 22px,
+        linear-gradient(var(--c), var(--c)) top right / 22px 2px, linear-gradient(var(--c), var(--c)) top right / 2px 22px,
+        linear-gradient(var(--c), var(--c)) bottom left / 22px 2px, linear-gradient(var(--c), var(--c)) bottom left / 2px 22px,
+        linear-gradient(var(--c), var(--c)) bottom right / 22px 2px, linear-gradient(var(--c), var(--c)) bottom right / 2px 22px;
+      background-repeat: no-repeat;
+    }
+    .chip {
+      position: absolute; left: 0; bottom: calc(100% + 8px); display: inline-flex; align-items: center; gap: 7px;
+      font: 500 .75rem/1 "Atkinson Hyperlegible Mono", ui-monospace, monospace; padding: 6px 9px; border-radius: 6px;
+      background: rgba(9, 14, 26, .7); border: 1px solid rgba(124, 147, 255, .35); white-space: nowrap;
+    }
+    .chip::before { content: ""; width: 5px; height: 5px; border-radius: 1px; background: #7C93FF; }
+    h1 { margin: 0; font-family: "Archivo", "Helvetica Neue", Arial, sans-serif; font-stretch: 120%; font-weight: 800; font-size: clamp(2.2rem, 1.4rem + 3vw, 3.4rem); line-height: 1.04; letter-spacing: -.022em; text-wrap: balance; }
+    p { margin: 18px auto 0; max-width: 34ch; color: #DCDFE8; }
+    .cta { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 32px; }
+    a.btn {
+      display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 0 20px; border-radius: 10px;
+      background: #7C93FF; color: #0D1424; font-weight: 600; text-decoration: none; border: 1px solid transparent;
+      transition: background-color .25s cubic-bezier(.22, 1, .36, 1);
+    }
+    a.btn:hover { background: #A0B1FF; }
+    a.btn.ghost { background: rgba(13, 20, 36, .4); color: #ECE9E1; border-color: #5C6884; }
+    a.btn.ghost:hover { border-color: #7C93FF; }
+    a:focus-visible { outline: 2px solid #7C93FF; outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="lock" aria-hidden="true"><span class="chip">page 0.00</span></div>
+    <h1>Nothing to detect here.</h1>
+    <p>This page doesn't exist or has moved. The work is still where it was.</p>
+    <div class="cta">
+      <a class="btn" href="https://adityasidham.site/#work">Back to the work</a>
+      <a class="btn ghost" href="https://adityasidham.site/#contact">Start a conversation</a>
+    </div>
+  </main>
+</body>
+</html>

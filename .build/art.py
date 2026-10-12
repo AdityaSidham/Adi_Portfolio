@@ -32,6 +32,38 @@ def rings():
             '<circle class="n" cx="200" cy="40" r="4"/><circle class="n" cx="310" cy="200" r="3"/>'
             '</svg>')
 
+# BlazePose's 33 landmarks placed by hand on aditya-la.jpg (1104x1380 pixels).
+POSE_33 = [
+    (564, 359), (550, 336), (544, 336), (537, 336), (577, 334), (584, 334), (590, 333),
+    (524, 352), (620, 355), (552, 372), (585, 370),
+    (465, 447), (705, 455), (437, 650), (725, 650), (462, 775), (695, 775),
+    (452, 792), (706, 792), (466, 800), (690, 800), (474, 782), (684, 782),
+    (492, 810), (668, 810), (505, 1060), (660, 1060), (500, 1290), (670, 1290),
+    (482, 1322), (680, 1322), (452, 1348), (705, 1348),
+]
+POSE_EDGES = [
+    (0, 1), (1, 2), (2, 3), (3, 7), (0, 4), (4, 5), (5, 6), (6, 8), (9, 10),
+    (11, 12), (11, 13), (13, 15), (15, 17), (15, 19), (15, 21), (17, 19),
+    (12, 14), (14, 16), (16, 18), (16, 20), (16, 22), (18, 20),
+    (11, 23), (12, 24), (23, 24), (23, 25), (24, 26), (25, 27), (26, 28),
+    (27, 29), (28, 30), (29, 31), (30, 32), (27, 31), (28, 32),
+]
+
+
+def pose_svg():
+    """The scan overlay: points appear top to bottom as --scan rises, then the bones draw."""
+    out = ['<svg class="pose" viewBox="0 0 1104 1380" preserveAspectRatio="xMidYMid slice" aria-hidden="true">']
+    for a, b in POSE_EDGES:
+        (x1, y1), (x2, y2) = POSE_33[a], POSE_33[b]
+        out.append(f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" pathLength="1"/>')
+    for i, (x, y) in enumerate(POSE_33):
+        t = 0.04 + (y - 330) / 1020 * 0.42
+        r = 5 if i <= 10 or 17 <= i <= 22 else 8
+        out.append(f'<circle cx="{x}" cy="{y}" r="{r}" style="--t:{t:.3f}"/>')
+    out.append("</svg>")
+    return "".join(out)
+
+
 def portrait_landmarks():
     """Rough pose landmarks over the hero portrait (4:5 box, coords in %)."""
     P = {

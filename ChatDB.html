@@ -1,25 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Chat-DB — Aditya Sidham</title>
+  <title>Chat-DB | Aditya Sidham</title>
   <meta name="description" content="Chat-DB translates plain-language questions into reviewable MySQL and MongoDB queries using the Gemini API and Streamlit.">
-  <meta name="theme-color" content="#F6F7F2">
-  <meta property="og:title" content="Chat-DB — Aditya Sidham">
+  <meta name="theme-color" content="#0D1424">
+  <link rel="canonical" href="https://adityasidham.site/ChatDB.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Aditya Sidham">
+  <meta property="og:title" content="Chat-DB | Aditya Sidham">
   <meta property="og:description" content="Chat-DB translates plain-language questions into reviewable MySQL and MongoDB queries using the Gemini API and Streamlit.">
-  <meta property="og:image" content="assets/img/web/chatdb-cover.svg">
+  <meta property="og:url" content="https://adityasidham.site/ChatDB.html">
+  <meta property="og:image" content="https://adityasidham.site/assets/img/og/og-chatdb.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://adityasidham.site/assets/img/og/og-chatdb.jpg">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=20260914e">
-  <script>(function(){try{var t=localStorage.getItem('theme');if(t==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112..125,700..800&family=Atkinson+Hyperlegible+Mono:wght@400;500&family=Atkinson+Hyperlegible+Next:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261012p">
+  <script>document.documentElement.className = 'js';</script>
 </head>
-<body class="is-ready">
-<div class="grain" aria-hidden="true"></div>
-<div class="cursor" aria-hidden="true"></div>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="env" aria-hidden="true"><i></i><i></i></div>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <symbol id="i-arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></symbol>
@@ -58,116 +67,106 @@
 </svg>
 
 <header class="nav">
-  <div class="container">
-    <a class="brand" href="index.html" aria-label="Aditya Sidham — home"><span class="mark" aria-hidden="true">AS</span>Aditya Sidham</a>
+  <div class="nav-inner">
+    <a class="brand" href="index.html" aria-label="Aditya Sidham, home"><span class="mark" aria-hidden="true">AS</span><span class="brand-name">Aditya Sidham</span></a>
     <nav class="nav-links" aria-label="Primary">
       <a href="index.html#work" class="is-active">Work</a>
       <a href="index.html#about">About</a>
       <a href="index.html#experience">Experience</a>
-      <a href="index.html#highlights">Highlights</a>
       <a href="index.html#contact">Contact</a>
     </nav>
     <div class="nav-actions">
-      <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
-        <svg class="sun"><use href="#i-sun"/></svg>
-        <svg class="moon"><use href="#i-moon"/></svg>
-      </button>
-      <a class="btn btn--sm" href="assets/resume/Aditya_Sidham_Resume.pdf" target="_blank" rel="noopener" data-magnetic="0.18">Résumé <svg><use href="#i-download"/></svg></a>
+      <a class="btn btn--ghost btn--sm" href="assets/resume/Aditya_Sidham_Resume.pdf" target="_blank" rel="noopener">Résumé <svg aria-hidden="true"><use href="#i-download"/></svg></a>
       <button class="icon-btn menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-        <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="bars" aria-hidden="true"><i></i><i></i></span>
       </button>
     </div>
   </div>
 </header>
 
 <div class="mobile-menu" id="mobile-menu">
-  <ol>
-    <li><a href="index.html#work">Work</a></li>
-    <li><a href="index.html#about">About</a></li>
-    <li><a href="index.html#experience">Experience</a></li>
-    <li><a href="index.html#highlights">Highlights</a></li>
-    <li><a href="index.html#contact">Contact</a></li>
-  </ol>
+  <nav aria-label="Mobile">
+    <a href="index.html#work">Work</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#training">Training</a>
+    <a href="index.html#experience">Experience</a>
+    <a href="index.html#highlights">Highlights</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
   <div class="mm-foot">
-    <a class="btn" href="assets/resume/Aditya_Sidham_Resume.pdf" target="_blank" rel="noopener">View résumé <svg><use href="#i-download"/></svg></a>
-    <a class="icon-btn" href="https://www.linkedin.com/in/adityasidham/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
-    <a class="icon-btn" href="https://github.com/adityasidham" target="_blank" rel="noopener" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
+    <a class="btn" href="assets/resume/Aditya_Sidham_Resume.pdf" target="_blank" rel="noopener">Open my résumé <svg aria-hidden="true"><use href="#i-download"/></svg></a>
+    <a class="icon-btn" href="https://www.linkedin.com/in/adityasidham/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+    <a class="icon-btn" href="https://github.com/adityasidham" target="_blank" rel="noopener" aria-label="GitHub"><svg aria-hidden="true"><use href="#i-github"/></svg></a>
   </div>
 </div>
 
-<main id="top">
-  <section class="project-hero" aria-labelledby="p-title">
-    <div class="dotfield" aria-hidden="true"></div>
-    <div class="art" style="right: -3%; top: 2%; width: min(38vw, 460px); aspect-ratio: 520/420; z-index: -1;"><svg viewBox="0 0 520 420" class="constellation" aria-hidden="true"><line class="edge" x1="341" y1="313" x2="269" y2="214"/><line class="edge" x1="341" y1="313" x2="211" y2="389"/><line class="edge" x1="341" y1="313" x2="209" y2="294"/><line class="edge" x1="269" y1="214" x2="173" y2="235"/><line class="edge" x1="269" y1="214" x2="209" y2="294"/><line class="edge" x1="269" y1="214" x2="399" y2="179"/><line class="edge" x1="269" y1="214" x2="378" y2="173"/><line class="edge" x1="211" y1="389" x2="209" y2="294"/><line class="edge" x1="163" y1="83" x2="150" y2="124"/><line class="edge" x1="163" y1="83" x2="181" y2="126"/><line class="edge" x1="163" y1="83" x2="123" y2="55"/><line class="edge" x1="150" y1="124" x2="181" y2="126"/><line class="edge" x1="150" y1="124" x2="80" y2="147"/><line class="edge" x1="150" y1="124" x2="123" y2="55"/><line class="edge" x1="80" y1="147" x2="123" y2="225"/><line class="edge" x1="173" y1="235" x2="123" y2="225"/><line class="edge" x1="173" y1="235" x2="209" y2="294"/><line class="edge" x1="173" y1="235" x2="76" y2="292"/><line class="edge" x1="123" y1="225" x2="76" y2="292"/><line class="edge" x1="399" y1="179" x2="378" y2="173"/><circle class="node" cx="341" cy="313" r="3"/><circle class="node" cx="269" cy="214" r="3.5"/><circle class="node" cx="211" cy="389" r="3.5"/><circle class="node" cx="163" cy="83" r="2.5"/><circle class="node" cx="150" cy="124" r="3.5"/><circle class="node" cx="181" cy="126" r="3"/><circle class="node" cx="80" cy="147" r="2.5"/><circle class="node" cx="173" cy="235" r="3.5"/><circle class="node" cx="123" cy="55" r="3.5"/><circle class="node" cx="123" cy="225" r="3.5"/><circle class="node is-accent" cx="209" cy="294" r="4"/><circle class="node" cx="399" cy="179" r="2.5"/><circle class="node" cx="76" cy="292" r="2.5"/><circle class="node" cx="378" cy="173" r="3"/><text class="label" x="219" y="286">schema</text></svg></div>
-    <div class="container">
-      <p class="crumbs" data-reveal="fade"><a href="index.html#work"><svg><use href="#i-arrow-right"/></svg> All work</a></p>
-      <p class="mono" data-reveal style="margin-bottom:20px">Case study · 03 · LLM application · Team lead</p>
-      <h1 class="display h-hero" id="p-title" data-reveal style="--d:60ms">Chat‑DB: ask the question before you <em>remember</em> the syntax.</h1>
-      <p class="lede" data-reveal style="--d:120ms">A Gemini‑powered application that turns plain‑language questions into reviewable MySQL or MongoDB queries. It cut query‑construction time by roughly 60% for people who were not comfortable writing database syntax by hand.</p>
-      <dl class="meta-grid" data-reveal style="--d:180ms">
+<main id="main" tabindex="-1">
+  <section class="p-hero" aria-labelledby="p-title">
+    <div class="p-hero-media" aria-hidden="true"><img src="assets/img/web/atmo-chatdb.jpg" alt="" width="1920" height="1072" fetchpriority="high"></div>
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html#work"><svg aria-hidden="true"><use href="#i-arrow-right"/></svg> All work</a></p>
+      <p class="p-kicker">LLM application. Team lead.</p>
+      <h1 class="p-title" id="p-title">Chat-DB: ask the question before you remember the syntax.</h1>
+      <p class="p-lede">A Gemini-powered application that turns plain-language questions into reviewable MySQL or MongoDB queries. It cut query-construction time by roughly 60% for people who were not comfortable writing database syntax by hand.</p>
+      <dl class="meta-grid">
         <div><dt>Category</dt><dd>LLM application, data tooling</dd></div>
-        <div><dt>Stack</dt><dd>Python · Streamlit · Google Gemini API · MySQL · MongoDB</dd></div>
-        <div><dt>Timeline</dt><dd>Mar 2025 — May 2025 · USC</dd></div>
-        <div><dt>Recognition</dt><dd><span class="pill">Team lead</span><br>Four‑person graduate project</dd></div>
+        <div><dt>Stack</dt><dd>Python, Streamlit, Google Gemini API, MySQL, MongoDB, pytest</dd></div>
+        <div><dt>Timeline</dt><dd>Mar – May 2025, USC</dd></div>
+        <div><dt>Recognition</dt><dd><span class="pill">Team lead</span><br>Four-person graduate project</dd></div>
       </dl>
-      <figure class="project-cover is-contain vf" data-reveal="scale" style="--d:240ms">
-        <span class="vf-b" aria-hidden="true"></span>
-        <img src="assets/img/web/chatdb-cover.svg" alt="Chat-DB converting an English question into a SQL query with a run button" width="1400" height="788" fetchpriority="high">
-      </figure>
+      <figure class="p-cover"><img src="assets/img/web/chatdb-cover.svg?v=20261012" alt="Chat-DB converting an English question into a SQL query with a run button" width="1400" height="788" fetchpriority="high"></figure>
     </div>
   </section>
 
-  <section class="section" style="padding-top: clamp(64px, 8vw, 112px)">
-    <div class="container project-body">
-      <aside class="side" data-reveal>
-        <p class="mono" style="margin-bottom:16px">On this page</p>
-        <ol>
-          <li><a href="#overview">Overview</a></li>
-          <li><a href="#how">How it works</a></li>
-          <li><a href="#impact">Results</a></li>
-          <li><a href="#learned">What I learned</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-        </ol>
-      </aside>
-      <div>
-        <section id="overview" data-reveal>
-          <h2 class="display">Overview</h2>
-          <div class="prose"><p>A person can understand the business question and still get blocked by joins, field names or MongoDB aggregation syntax. <strong>Chat‑DB removes that first barrier.</strong> The user connects a database, asks in ordinary language, and gets a query they can review, edit and run.</p>
-<p>I led the four‑person team, shaped the architecture, managed the delivery plan, and worked with teammates on prompting and API integration. The project also showed us where language models need structure: real schema context, dialect‑specific instructions and a human‑controlled execution step.</p></div>
-        </section>
-        <section id="how" data-reveal>
-          <h2 class="display">How it works</h2>
-          <ul class="bullets"><li><strong>Schema grounding.</strong> On connect, the app reads available tables, collections and fields, then compresses that schema into the model context so Gemini generates against the real database instead of guessing names.</li>
-<li><strong>Dialect‑aware prompting.</strong> Separate prompt paths handle SQL and MongoDB's aggregation pipeline, because the two engines need different syntax and reasoning.</li>
+  <div class="wrap p-body">
+    <aside class="p-side">
+      <p>On this page</p>
+      <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#impact">Results</a></li>
+        <li><a href="#learned">What I learned</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ol>
+    </aside>
+    <div class="p-main">
+      <section id="overview" data-reveal>
+        <h2>Overview</h2>
+        <div class="prose"><p>A person can understand the business question and still get blocked by joins, field names or MongoDB aggregation syntax. <strong>Chat-DB removes that first barrier.</strong> The user connects a database, asks in ordinary language, and gets a query they can review, edit and run.</p>
+<p>I led the four-person team, shaped the architecture, managed the delivery plan, and worked with teammates on prompting and API integration. The project also showed us where language models need structure: real schema context, dialect-specific instructions and a human-controlled execution step.</p></div>
+      </section>
+      <section id="how" data-reveal>
+        <h2>How it works</h2>
+        <ul class="bullets"><li><strong>Schema grounding.</strong> On connect, the app reads available tables, collections and fields, then compresses that schema into the model context so Gemini generates against the real database instead of guessing names.</li>
+<li><strong>Dialect-aware prompting.</strong> Separate prompt paths handle SQL and MongoDB's aggregation pipeline, because the two engines need different syntax and reasoning.</li>
 <li><strong>Review before run.</strong> The generated query appears in an editable block. Nothing executes until the user confirms.</li>
 <li><strong>Results and explanation.</strong> After execution the app renders the result table and explains in plain language what the query did.</li>
-<li><strong>Guard rails.</strong> Potentially destructive statements are flagged and need an extra confirmation.</li></ul>
-        </section>
-        <section id="impact" data-reveal><h2 class="display">Impact</h2><div class="stat-row"><div class="stat"><div class="num">~60%</div><div class="lbl">faster query construction</div></div><div class="stat"><div class="num">2</div><div class="lbl">engines: MySQL and MongoDB</div></div><div class="stat"><div class="num">4</div><div class="lbl">person team, which I led</div></div></div></section>
-        <section id="learned" data-reveal><h2 class="display">What I learned</h2><div class="prose"><p>Language models need structure to be trustworthy near a database. <strong>Real schema context, dialect-specific instructions and a human-controlled execution step</strong> did more for output quality than any amount of prompt polish.</p><p>Leading the team taught me to split an ambiguous brief into reviewable pieces, and to make the risky part, query execution, the most visible part of the interface.</p></div></section>
-        <section id="gallery" data-reveal>
-          <h2 class="display">Gallery</h2>
-          <div class="gallery"><figure class="is-contain"><img src="assets/img/web/chatdb-cover.svg" alt="Chat-DB interface concept: English question above the generated SQL" loading="lazy"><figcaption>Question in, query out</figcaption></figure></div>
-        </section>
-      </div>
+<li><strong>Guard rails.</strong> Potentially destructive statements are flagged and need an extra confirmation.</li>
+<li><strong>Measured, not assumed.</strong> A pytest evaluation suite of 150 labeled questions reached 92% result correctness and caught 12 regressions before release.</li></ul>
+      </section>
+      <section id="impact" data-reveal><h2>Results</h2><div class="stat-row"><div class="stat"><div class="num">~60%</div><div class="lbl">faster query construction</div></div><div class="stat"><div class="num">92%</div><div class="lbl">correct on 150 labeled test questions</div></div><div class="stat"><div class="num">12</div><div class="lbl">regressions caught before release</div></div></div></section>
+      <section id="learned" data-reveal><h2>What I learned</h2><div class="prose"><p>Language models need structure to be trustworthy near a database. <strong>Real schema context, dialect-specific instructions and a human-controlled execution step</strong> did more for output quality than any amount of prompt polish.</p><p>Leading the team taught me to split an ambiguous brief into reviewable pieces, and to make the risky part, query execution, the most visible part of the interface.</p></div></section>
+      <section id="gallery" data-reveal>
+        <h2>Gallery</h2>
+        <div class="gallery"><figure class="is-wide"><img src="assets/img/web/chatdb-cover.svg?v=20261012" alt="Chat-DB interface concept: English question above the generated SQL" loading="lazy"><figcaption>Question in, query out</figcaption></figure></div>
+      </section>
     </div>
-  </section>
+  </div>
 
   <section class="next-project">
-    <div class="container" style="position:relative">
-      <div class="art" style="right: 2%; top: 10%; width: min(26vw, 300px); aspect-ratio: 520/420; z-index: -1;"><svg viewBox="0 0 520 420" class="constellation" aria-hidden="true"><line class="edge" x1="456" y1="95" x2="486" y2="121"/><line class="edge" x1="456" y1="95" x2="403" y2="106"/><line class="edge" x1="391" y1="224" x2="480" y2="229"/><line class="edge" x1="391" y1="224" x2="298" y2="176"/><line class="edge" x1="480" y1="229" x2="486" y2="121"/><line class="edge" x1="229" y1="59" x2="298" y2="176"/><line class="edge" x1="229" y1="59" x2="148" y2="185"/><line class="edge" x1="227" y1="377" x2="298" y2="176"/><line class="edge" x1="227" y1="377" x2="148" y2="185"/><line class="edge" x1="486" y1="121" x2="403" y2="106"/><line class="edge" x1="403" y1="106" x2="298" y2="176"/><line class="edge" x1="298" y1="176" x2="148" y2="185"/><circle class="node is-accent" cx="456" cy="95" r="4"/><circle class="node" cx="391" cy="224" r="3.5"/><circle class="node" cx="480" cy="229" r="3.5"/><circle class="node" cx="229" cy="59" r="3"/><circle class="node" cx="227" cy="377" r="2.5"/><circle class="node" cx="486" cy="121" r="2.5"/><circle class="node" cx="403" cy="106" r="3"/><circle class="node" cx="298" cy="176" r="2.5"/><circle class="node" cx="148" cy="185" r="3.5"/></svg></div>
+    <div class="wrap">
       <a href="FireandSmokeDetectionPage.html">
-        <span class="mono">Next project</span>
-        <span class="display h-section">SafeSense <svg><use href="#i-arrow-right"/></svg></span>
+        <span>Next project</span>
+        <span class="next-title">SafeSense <svg aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
       </a>
     </div>
   </section>
 </main>
 
 <footer class="footer">
-  <div class="container">
-    <p>© <span data-year>2026</span> Designed and built by Aditya Sidham in Los Angeles.</p>
-    <span class="clock" data-clock>Los Angeles</span>
+  <div class="wrap footer-inner">
+    <p>© <span data-year>2026</span> Designed and built by Aditya Sidham in Los Angeles. Photos and screenshots are real. Scene imagery made with Runway.</p>
+    <span class="clock chip" data-clock>Los Angeles</span>
     <nav aria-label="Footer">
       <a href="index.html#work">Work</a>
       <a href="index.html#about">About</a>
@@ -177,10 +176,9 @@
 </footer>
 
 <dialog class="lightbox" id="lightbox" aria-label="Image preview">
-  <button class="icon-btn close" type="button" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <button class="icon-btn close" type="button" aria-label="Close"><svg viewBox="0 0 24 24" stroke-width="1.75" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
   <img src="" alt="">
 </dialog>
-<a class="icon-btn to-top" href="#top" aria-label="Back to top"><svg><use href="#i-arrow-up"/></svg></a>
-<script src="assets/js/main.js?v=20260914e" defer></script>
+<script src="assets/js/main.js?v=20261012p" defer></script>
 </body>
 </html>

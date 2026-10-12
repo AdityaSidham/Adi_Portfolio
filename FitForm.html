@@ -1,25 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FitForm — Aditya Sidham</title>
-  <meta name="description" content="FitForm is a patented computer-vision system that counts repetitions and checks exercise form in real time using MediaPipe and OpenCV.">
-  <meta name="theme-color" content="#F6F7F2">
-  <meta property="og:title" content="FitForm — Aditya Sidham">
-  <meta property="og:description" content="FitForm is a patented computer-vision system that counts repetitions and checks exercise form in real time using MediaPipe and OpenCV.">
-  <meta property="og:image" content="assets/img/web/fitform-cover.jpg">
+  <title>FitForm | Aditya Sidham</title>
+  <meta name="description" content="FitForm is a patent-pending computer-vision system that counts repetitions and checks exercise form in real time using MediaPipe and OpenCV.">
+  <meta name="theme-color" content="#0D1424">
+  <link rel="canonical" href="https://adityasidham.site/FitForm.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Aditya Sidham">
+  <meta property="og:title" content="FitForm | Aditya Sidham">
+  <meta property="og:description" content="FitForm is a patent-pending computer-vision system that counts repetitions and checks exercise form in real time using MediaPipe and OpenCV.">
+  <meta property="og:url" content="https://adityasidham.site/FitForm.html">
+  <meta property="og:image" content="https://adityasidham.site/assets/img/og/og-fitform.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://adityasidham.site/assets/img/og/og-fitform.jpg">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=20260914e">
-  <script>(function(){try{var t=localStorage.getItem('theme');if(t==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112..125,700..800&family=Atkinson+Hyperlegible+Mono:wght@400;500&family=Atkinson+Hyperlegible+Next:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261012p">
+  <script>document.documentElement.className = 'js';</script>
 </head>
-<body class="is-ready">
-<div class="grain" aria-hidden="true"></div>
-<div class="cursor" aria-hidden="true"></div>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="env" aria-hidden="true"><i></i><i></i></div>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <symbol id="i-arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></symbol>
@@ -58,116 +67,106 @@
 </svg>
 
 <header class="nav">
-  <div class="container">
-    <a class="brand" href="index.html" aria-label="Aditya Sidham — home"><span class="mark" aria-hidden="true">AS</span>Aditya Sidham</a>
+  <div class="nav-inner">
+    <a class="brand" href="index.html" aria-label="Aditya Sidham, home"><span class="mark" aria-hidden="true">AS</span><span class="brand-name">Aditya Sidham</span></a>
     <nav class="nav-links" aria-label="Primary">
       <a href="index.html#work" class="is-active">Work</a>
       <a href="index.html#about">About</a>
       <a href="index.html#experience">Experience</a>
-      <a href="index.html#highlights">Highlights</a>
       <a href="index.html#contact">Contact</a>
     </nav>
     <div class="nav-actions">
-      <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
-        <svg class="sun"><use href="#i-sun"/></svg>
-        <svg class="moon"><use href="#i-moon"/></svg>
-      </button>
-      <a class="btn btn--sm" href="assets/resume/Aditya_Sidham_Resume.pdf" target="_blank" rel="noopener" data-magnetic="0.18">Résumé <svg><use href="#i-download"/></svg></a>
+      <a class="btn btn--ghost btn--sm" href="assets/resume/Aditya_Sidham_Resume.pdf" target="_blank" rel="noopener">Résumé <svg aria-hidden="true"><use href="#i-download"/></svg></a>
       <button class="icon-btn menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-        <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="bars" aria-hidden="true"><i></i><i></i></span>
       </button>
     </div>
   </div>
 </header>
 
 <div class="mobile-menu" id="mobile-menu">
-  <ol>
-    <li><a href="index.html#work">Work</a></li>
-    <li><a href="index.html#about">About</a></li>
-    <li><a href="index.html#experience">Experience</a></li>
-    <li><a href="index.html#highlights">Highlights</a></li>
-    <li><a href="index.html#contact">Contact</a></li>
-  </ol>
+  <nav aria-label="Mobile">
+    <a href="index.html#work">Work</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#training">Training</a>
+    <a href="index.html#experience">Experience</a>
+    <a href="index.html#highlights">Highlights</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
   <div class="mm-foot">
-    <a class="btn" href="assets/resume/Aditya_Sidham_Resume.pdf" target="_blank" rel="noopener">View résumé <svg><use href="#i-download"/></svg></a>
-    <a class="icon-btn" href="https://www.linkedin.com/in/adityasidham/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
-    <a class="icon-btn" href="https://github.com/adityasidham" target="_blank" rel="noopener" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
+    <a class="btn" href="assets/resume/Aditya_Sidham_Resume.pdf" target="_blank" rel="noopener">Open my résumé <svg aria-hidden="true"><use href="#i-download"/></svg></a>
+    <a class="icon-btn" href="https://www.linkedin.com/in/adityasidham/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+    <a class="icon-btn" href="https://github.com/adityasidham" target="_blank" rel="noopener" aria-label="GitHub"><svg aria-hidden="true"><use href="#i-github"/></svg></a>
   </div>
 </div>
 
-<main id="top">
-  <section class="project-hero" aria-labelledby="p-title">
-    <div class="dotfield" aria-hidden="true"></div>
-    <div class="art" style="right: -3%; top: 2%; width: min(38vw, 460px); aspect-ratio: 520/420; z-index: -1;"><svg viewBox="0 0 520 420" class="constellation" aria-hidden="true"><line class="edge" x1="238" y1="232" x2="264" y2="241"/><line class="edge" x1="238" y1="232" x2="331" y2="252"/><line class="edge" x1="455" y1="198" x2="320" y2="315"/><line class="edge" x1="455" y1="198" x2="349" y2="45"/><line class="edge" x1="455" y1="198" x2="482" y2="377"/><line class="edge" x1="455" y1="198" x2="331" y2="252"/><line class="edge" x1="264" y1="241" x2="320" y2="315"/><line class="edge" x1="264" y1="241" x2="331" y2="252"/><line class="edge" x1="115" y1="214" x2="73" y2="139"/><line class="edge" x1="115" y1="214" x2="72" y2="321"/><line class="edge" x1="115" y1="214" x2="44" y2="197"/><line class="edge" x1="320" y1="315" x2="482" y2="377"/><line class="edge" x1="320" y1="315" x2="331" y2="252"/><line class="edge" x1="73" y1="139" x2="102" y2="35"/><line class="edge" x1="73" y1="139" x2="117" y2="117"/><line class="edge" x1="73" y1="139" x2="44" y2="197"/><line class="edge" x1="72" y1="321" x2="44" y2="197"/><line class="edge" x1="349" y1="45" x2="273" y2="51"/><line class="edge" x1="102" y1="35" x2="117" y2="117"/><line class="edge" x1="273" y1="51" x2="117" y2="117"/><circle class="node" cx="238" cy="232" r="3.5"/><circle class="node" cx="455" cy="198" r="2.5"/><circle class="node" cx="264" cy="241" r="3.5"/><circle class="node" cx="115" cy="214" r="2.5"/><circle class="node" cx="320" cy="315" r="3.5"/><circle class="node" cx="73" cy="139" r="3"/><circle class="node" cx="72" cy="321" r="3"/><circle class="node is-accent" cx="349" cy="45" r="4"/><circle class="node" cx="482" cy="377" r="2.5"/><circle class="node" cx="331" cy="252" r="3.5"/><circle class="node" cx="102" cy="35" r="2.5"/><circle class="node" cx="273" cy="51" r="3"/><circle class="node" cx="117" cy="117" r="3.5"/><circle class="node" cx="44" cy="197" r="3"/><text class="label" x="359" y="37">landmarks</text></svg></div>
-    <div class="container">
-      <p class="crumbs" data-reveal="fade"><a href="index.html#work"><svg><use href="#i-arrow-right"/></svg> All work</a></p>
-      <p class="mono" data-reveal style="margin-bottom:20px">Case study · 02 · Computer vision · Patent published</p>
-      <h1 class="display h-hero" id="p-title" data-reveal style="--d:60ms">FitForm: a camera‑based <em>coach</em> for exercise form.</h1>
-      <p class="lede" data-reveal style="--d:120ms">Pose estimation that counts repetitions and evaluates form while a person trains. It started with a personal question: could the same computer‑vision tools used for detection become useful feedback during an ordinary workout?</p>
-      <dl class="meta-grid" data-reveal style="--d:180ms">
+<main id="main" tabindex="-1">
+  <section class="p-hero" aria-labelledby="p-title">
+    <div class="p-hero-media" aria-hidden="true"><img src="assets/img/web/atmo-fitform.jpg" alt="" width="1920" height="1072" fetchpriority="high"></div>
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html#work"><svg aria-hidden="true"><use href="#i-arrow-right"/></svg> All work</a></p>
+      <p class="p-kicker">Computer vision. Patent application published.</p>
+      <h1 class="p-title" id="p-title">FitForm: a camera-based coach for exercise form.</h1>
+      <p class="p-lede">Pose estimation that counts repetitions and evaluates form while a person trains. It started with a personal question: could the same computer-vision tools used for detection become useful feedback during an ordinary workout?</p>
+      <dl class="meta-grid">
         <div><dt>Category</dt><dd>Computer vision, health tech</dd></div>
-        <div><dt>Stack</dt><dd>Python · MediaPipe · BlazePose · OpenCV · TensorFlow</dd></div>
+        <div><dt>Stack</dt><dd>Python, MediaPipe, BlazePose, OpenCV, TensorFlow</dd></div>
         <div><dt>Timeline</dt><dd>2024</dd></div>
-        <div><dt>Recognition</dt><dd><span class="pill">Patent published</span><br>App. no. 202421099595 · 17 Jan 2025</dd></div>
+        <div><dt>Recognition</dt><dd><span class="pill">Patent application</span><br>No. 202421099595, published 17 Jan 2025, co-applicant</dd></div>
       </dl>
-      <figure class="project-cover vf" data-reveal="scale" style="--d:240ms">
-        <span class="vf-b" aria-hidden="true"></span>
-        <img src="assets/img/web/fitform-1.jpg" alt="FitForm interface showing the live webcam feed with per-exercise repetition counters" width="1400" height="788" fetchpriority="high">
-      </figure>
+      <figure class="p-cover"><img src="assets/img/web/fitform-1.jpg" alt="FitForm interface showing the live webcam feed with per-exercise repetition counters" width="1400" height="788" fetchpriority="high"></figure>
     </div>
   </section>
 
-  <section class="section" style="padding-top: clamp(64px, 8vw, 112px)">
-    <div class="container project-body">
-      <aside class="side" data-reveal>
-        <p class="mono" style="margin-bottom:16px">On this page</p>
-        <ol>
-          <li><a href="#overview">Overview</a></li>
-          <li><a href="#how">How it works</a></li>
-          <li><a href="#impact">Results</a></li>
-          <li><a href="#learned">What I learned</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-        </ol>
-      </aside>
-      <div>
-        <section id="overview" data-reveal>
-          <h2 class="display">Overview</h2>
-          <div class="prose"><p>A repetition counter can tell someone how much they moved, but not whether the movement was safe or effective. <strong>FitForm follows 33 body landmarks from a standard camera, turns them into joint relationships for each exercise, and checks those measurements against form rules while the user trains.</strong></p>
-<p>It supports posture‑aware counting for movements such as squats, curls and presses. A repetition only counts when the motion completes the required range, so a half‑squat or a swinging curl does not inflate the number. The work led to the publication of Indian patent application 202421099595 on 17 January 2025.</p></div>
-        </section>
-        <section id="how" data-reveal>
-          <h2 class="display">How it works</h2>
-          <ul class="bullets"><li><strong>Pose estimation.</strong> MediaPipe's BlazePose returns 33 body landmarks per frame from an ordinary webcam, fast enough to run on CPU.</li>
-<li><strong>Joint angles.</strong> Relevant landmark triplets become angles every frame: hip‑knee‑ankle for squats, shoulder‑elbow‑wrist for curls.</li>
+  <div class="wrap p-body">
+    <aside class="p-side">
+      <p>On this page</p>
+      <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#impact">Results</a></li>
+        <li><a href="#learned">What I learned</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ol>
+    </aside>
+    <div class="p-main">
+      <section id="overview" data-reveal>
+        <h2>Overview</h2>
+        <div class="prose"><p>A repetition counter can tell someone how much they moved, but not whether the movement was safe or effective. <strong>FitForm follows 33 body landmarks from a standard camera, turns them into joint relationships for each exercise, and checks those measurements against form rules while the user trains.</strong></p>
+<p>It supports posture-aware counting for movements such as squats, curls and presses. A repetition only counts when the motion completes the required range, so a half-squat or a swinging curl does not inflate the number. The work led to Indian patent application 202421099595, published on 17 January 2025, with me as a co-applicant.</p></div>
+      </section>
+      <section id="how" data-reveal>
+        <h2>How it works</h2>
+        <ul class="bullets"><li><strong>Pose estimation.</strong> MediaPipe's BlazePose returns 33 body landmarks per frame from an ordinary webcam, fast enough to run on CPU.</li>
+<li><strong>Joint angles.</strong> Relevant landmark triplets become angles every frame: hip-knee-ankle for squats, shoulder-elbow-wrist for curls.</li>
 <li><strong>State machine per exercise.</strong> Angles drive an up/down stage detector, and a rep counts only on a full cycle that stays inside the posture thresholds.</li>
-<li><strong>Live correction.</strong> OpenCV overlays the skeleton, stage, angle and counters directly on the video so form can be fixed mid‑set.</li>
+<li><strong>Live correction.</strong> OpenCV overlays the skeleton, stage, angle and counters directly on the video so form can be fixed mid-set.</li>
+<li><strong>Steady under real conditions.</strong> Confidence filtering and temporal smoothing keep it at 25 FPS on a laptop CPU and cut false rep counts by 30% across 120 annotated clips, including fast and partly hidden movements.</li>
 <li><strong>Session logging.</strong> Counts per exercise are collected with Pandas for review after the workout.</li></ul>
-        </section>
-        <section id="impact" data-reveal><h2 class="display">Impact</h2><div class="stat-row"><div class="stat"><div class="num">33</div><div class="lbl">body landmarks per frame</div></div><div class="stat"><div class="num">3+</div><div class="lbl">exercises with posture-aware counting</div></div><div class="stat"><div class="num">1</div><div class="lbl">patent published, Jan 2025</div></div></div></section>
-        <section id="learned" data-reveal><h2 class="display">What I learned</h2><div class="prose"><p>FitForm changed how I think about applied computer vision. <strong>Detection alone was not the product.</strong> The useful part was translating landmarks into feedback a person can act on in the middle of a movement.</p><p>It also taught me that thresholds are a design decision, not a constant. Too strict and honest reps go uncounted; too loose and the counter stops meaning anything.</p></div></section>
-        <section id="gallery" data-reveal>
-          <h2 class="display">Gallery</h2>
-          <div class="gallery"><figure><img src="assets/img/web/fitform-cover.jpg" alt="Overhead press with skeleton overlay and rep counters" loading="lazy"><figcaption>Overhead press, both arms tracked</figcaption></figure><figure class="is-contain"><img src="assets/img/web/fitform-2.jpg" alt="Flow diagram of the FitForm pipeline from camera feed to rep estimation" loading="lazy"><figcaption>Pipeline: feed to estimation</figcaption></figure><figure><img src="assets/img/web/fitform-3.jpg" alt="Bicep curl start position with counters reading 4 up and 1 down" loading="lazy"><figcaption>Curl start, arms down</figcaption></figure><figure><img src="assets/img/web/fitform-4.jpg" alt="Shoulder press at the top of the rep with stage readouts" loading="lazy"><figcaption>Shoulder press, rep counted</figcaption></figure><figure><img src="assets/img/web/fitform-5.jpg" alt="Squat at full depth with the squat counter reading 5 down" loading="lazy"><figcaption>Squat depth, 5 down</figcaption></figure><figure class="is-contain"><img src="assets/img/web/patent.jpg" alt="Published patent document for FitForm" loading="lazy"><figcaption>Patent publication</figcaption></figure></div>
-        </section>
-      </div>
+      </section>
+      <section id="impact" data-reveal><h2>Results</h2><div class="stat-row"><div class="stat"><div class="num">33</div><div class="lbl">body landmarks per frame</div></div><div class="stat"><div class="num">25 FPS</div><div class="lbl">on a laptop CPU</div></div><div class="stat"><div class="num">−30%</div><div class="lbl">false rep counts across 120 annotated clips</div></div></div></section>
+      <section id="learned" data-reveal><h2>What I learned</h2><div class="prose"><p>FitForm changed how I think about applied computer vision. <strong>Detection alone was not the product.</strong> The useful part was translating landmarks into feedback a person can act on in the middle of a movement.</p><p>It also taught me that thresholds are a design decision, not a constant. Too strict and honest reps go uncounted; too loose and the counter stops meaning anything.</p></div></section>
+      <section id="gallery" data-reveal>
+        <h2>Gallery</h2>
+        <div class="gallery"><figure><img src="assets/img/web/fitform-cover.jpg" alt="Overhead press with skeleton overlay and rep counters" loading="lazy"><figcaption>Overhead press, both arms tracked</figcaption></figure><figure class="is-contain"><img src="assets/img/web/fitform-2.jpg" alt="Flow diagram of the FitForm pipeline from camera feed to rep estimation" loading="lazy"><figcaption>Pipeline: feed to estimation</figcaption></figure><figure><img src="assets/img/web/fitform-3.jpg" alt="Bicep curl start position with counters reading 4 up and 1 down" loading="lazy"><figcaption>Curl start, arms down</figcaption></figure><figure><img src="assets/img/web/fitform-4.jpg" alt="Shoulder press at the top of the rep with stage readouts" loading="lazy"><figcaption>Shoulder press, rep counted</figcaption></figure><figure><img src="assets/img/web/fitform-5.jpg" alt="Squat at full depth with the squat counter reading 5 down" loading="lazy"><figcaption>Squat depth, 5 down</figcaption></figure><figure class="is-contain"><img src="assets/img/web/patent.jpg" alt="Published patent application document for FitForm" loading="lazy"><figcaption>Published patent application</figcaption></figure></div>
+      </section>
     </div>
-  </section>
+  </div>
 
   <section class="next-project">
-    <div class="container" style="position:relative">
-      <div class="art" style="right: 2%; top: 10%; width: min(26vw, 300px); aspect-ratio: 520/420; z-index: -1;"><svg viewBox="0 0 520 420" class="constellation" aria-hidden="true"><line class="edge" x1="410" y1="107" x2="464" y2="208"/><line class="edge" x1="410" y1="107" x2="338" y2="180"/><line class="edge" x1="410" y1="107" x2="445" y2="156"/><line class="edge" x1="464" y1="208" x2="445" y2="156"/><line class="edge" x1="213" y1="252" x2="206" y2="130"/><line class="edge" x1="213" y1="252" x2="132" y2="288"/><line class="edge" x1="108" y1="100" x2="224" y2="113"/><line class="edge" x1="108" y1="100" x2="206" y2="130"/><line class="edge" x1="224" y1="113" x2="206" y2="130"/><line class="edge" x1="338" y1="180" x2="445" y2="156"/><line class="edge" x1="206" y1="130" x2="132" y2="288"/><circle class="node is-accent" cx="410" cy="107" r="4"/><circle class="node" cx="464" cy="208" r="3"/><circle class="node" cx="213" cy="252" r="3.5"/><circle class="node" cx="108" cy="100" r="3.5"/><circle class="node" cx="224" cy="113" r="2.5"/><circle class="node" cx="338" cy="180" r="3.5"/><circle class="node" cx="206" cy="130" r="3"/><circle class="node" cx="132" cy="288" r="3"/><circle class="node" cx="445" cy="156" r="2.5"/></svg></div>
+    <div class="wrap">
       <a href="ChatDB.html">
-        <span class="mono">Next project</span>
-        <span class="display h-section">Chat‑DB <svg><use href="#i-arrow-right"/></svg></span>
+        <span>Next project</span>
+        <span class="next-title">Chat-DB <svg aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
       </a>
     </div>
   </section>
 </main>
 
 <footer class="footer">
-  <div class="container">
-    <p>© <span data-year>2026</span> Designed and built by Aditya Sidham in Los Angeles.</p>
-    <span class="clock" data-clock>Los Angeles</span>
+  <div class="wrap footer-inner">
+    <p>© <span data-year>2026</span> Designed and built by Aditya Sidham in Los Angeles. Photos and screenshots are real. Scene imagery made with Runway.</p>
+    <span class="clock chip" data-clock>Los Angeles</span>
     <nav aria-label="Footer">
       <a href="index.html#work">Work</a>
       <a href="index.html#about">About</a>
@@ -177,10 +176,9 @@
 </footer>
 
 <dialog class="lightbox" id="lightbox" aria-label="Image preview">
-  <button class="icon-btn close" type="button" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <button class="icon-btn close" type="button" aria-label="Close"><svg viewBox="0 0 24 24" stroke-width="1.75" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
   <img src="" alt="">
 </dialog>
-<a class="icon-btn to-top" href="#top" aria-label="Back to top"><svg><use href="#i-arrow-up"/></svg></a>
-<script src="assets/js/main.js?v=20260914e" defer></script>
+<script src="assets/js/main.js?v=20261012p" defer></script>
 </body>
 </html>

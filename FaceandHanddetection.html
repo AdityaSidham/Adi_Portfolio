@@ -1,25 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Face & Hand Recognition — Aditya Sidham</title>
+  <title>Face & Hand Recognition | Aditya Sidham</title>
   <meta name="description" content="A webcam vision system that detects a face, counts raised fingers and controls LEDs through an Arduino in real time.">
-  <meta name="theme-color" content="#F6F7F2">
-  <meta property="og:title" content="Face & Hand Recognition — Aditya Sidham">
+  <meta name="theme-color" content="#0D1424">
+  <link rel="canonical" href="https://adityasidham.site/FaceandHanddetection.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Aditya Sidham">
+  <meta property="og:title" content="Face & Hand Recognition | Aditya Sidham">
   <meta property="og:description" content="A webcam vision system that detects a face, counts raised fingers and controls LEDs through an Arduino in real time.">
-  <meta property="og:image" content="assets/img/web/face-hand-cover.jpg">
+  <meta property="og:url" content="https://adityasidham.site/FaceandHanddetection.html">
+  <meta property="og:image" content="https://adityasidham.site/assets/img/og/og-facehand.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://adityasidham.site/assets/img/og/og-facehand.jpg">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=20260914e">
-  <script>(function(){try{var t=localStorage.getItem('theme');if(t==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112..125,700..800&family=Atkinson+Hyperlegible+Mono:wght@400;500&family=Atkinson+Hyperlegible+Next:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261012p">
+  <script>document.documentElement.className = 'js';</script>
 </head>
-<body class="is-ready">
-<div class="grain" aria-hidden="true"></div>
-<div class="cursor" aria-hidden="true"></div>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="env" aria-hidden="true"><i></i><i></i></div>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <symbol id="i-arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></symbol>
@@ -58,115 +67,104 @@
 </svg>
 
 <header class="nav">
-  <div class="container">
-    <a class="brand" href="index.html" aria-label="Aditya Sidham — home"><span class="mark" aria-hidden="true">AS</span>Aditya Sidham</a>
+  <div class="nav-inner">
+    <a class="brand" href="index.html" aria-label="Aditya Sidham, home"><span class="mark" aria-hidden="true">AS</span><span class="brand-name">Aditya Sidham</span></a>
     <nav class="nav-links" aria-label="Primary">
       <a href="index.html#work" class="is-active">Work</a>
       <a href="index.html#about">About</a>
       <a href="index.html#experience">Experience</a>
-      <a href="index.html#highlights">Highlights</a>
       <a href="index.html#contact">Contact</a>
     </nav>
     <div class="nav-actions">
-      <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
-        <svg class="sun"><use href="#i-sun"/></svg>
-        <svg class="moon"><use href="#i-moon"/></svg>
-      </button>
-      <a class="btn btn--sm" href="assets/resume/Aditya_Sidham_Resume.pdf" target="_blank" rel="noopener" data-magnetic="0.18">Résumé <svg><use href="#i-download"/></svg></a>
+      <a class="btn btn--ghost btn--sm" href="assets/resume/Aditya_Sidham_Resume.pdf" target="_blank" rel="noopener">Résumé <svg aria-hidden="true"><use href="#i-download"/></svg></a>
       <button class="icon-btn menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-        <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="bars" aria-hidden="true"><i></i><i></i></span>
       </button>
     </div>
   </div>
 </header>
 
 <div class="mobile-menu" id="mobile-menu">
-  <ol>
-    <li><a href="index.html#work">Work</a></li>
-    <li><a href="index.html#about">About</a></li>
-    <li><a href="index.html#experience">Experience</a></li>
-    <li><a href="index.html#highlights">Highlights</a></li>
-    <li><a href="index.html#contact">Contact</a></li>
-  </ol>
+  <nav aria-label="Mobile">
+    <a href="index.html#work">Work</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#training">Training</a>
+    <a href="index.html#experience">Experience</a>
+    <a href="index.html#highlights">Highlights</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
   <div class="mm-foot">
-    <a class="btn" href="assets/resume/Aditya_Sidham_Resume.pdf" target="_blank" rel="noopener">View résumé <svg><use href="#i-download"/></svg></a>
-    <a class="icon-btn" href="https://www.linkedin.com/in/adityasidham/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
-    <a class="icon-btn" href="https://github.com/adityasidham" target="_blank" rel="noopener" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
+    <a class="btn" href="assets/resume/Aditya_Sidham_Resume.pdf" target="_blank" rel="noopener">Open my résumé <svg aria-hidden="true"><use href="#i-download"/></svg></a>
+    <a class="icon-btn" href="https://www.linkedin.com/in/adityasidham/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+    <a class="icon-btn" href="https://github.com/adityasidham" target="_blank" rel="noopener" aria-label="GitHub"><svg aria-hidden="true"><use href="#i-github"/></svg></a>
   </div>
 </div>
 
-<main id="top">
-  <section class="project-hero" aria-labelledby="p-title">
-    <div class="dotfield" aria-hidden="true"></div>
-    <div class="art" style="right: -3%; top: 2%; width: min(38vw, 460px); aspect-ratio: 520/420; z-index: -1;"><svg viewBox="0 0 520 420" class="constellation" aria-hidden="true"><line class="edge" x1="282" y1="300" x2="162" y2="378"/><line class="edge" x1="282" y1="300" x2="291" y2="299"/><line class="edge" x1="282" y1="300" x2="360" y2="241"/><line class="edge" x1="374" y1="341" x2="291" y2="299"/><line class="edge" x1="374" y1="341" x2="377" y2="365"/><line class="edge" x1="162" y1="378" x2="291" y2="299"/><line class="edge" x1="162" y1="378" x2="42" y2="273"/><line class="edge" x1="291" y1="299" x2="377" y2="365"/><line class="edge" x1="291" y1="299" x2="360" y2="241"/><line class="edge" x1="156" y1="162" x2="54" y2="114"/><line class="edge" x1="156" y1="162" x2="179" y2="87"/><line class="edge" x1="360" y1="241" x2="375" y2="161"/><line class="edge" x1="360" y1="241" x2="362" y2="165"/><line class="edge" x1="375" y1="161" x2="469" y2="34"/><line class="edge" x1="375" y1="161" x2="362" y2="165"/><line class="edge" x1="469" y1="34" x2="362" y2="165"/><line class="edge" x1="42" y1="273" x2="54" y2="114"/><line class="edge" x1="54" y1="114" x2="106" y2="57"/><line class="edge" x1="179" y1="87" x2="106" y2="57"/><circle class="node" cx="282" cy="300" r="3"/><circle class="node" cx="374" cy="341" r="2.5"/><circle class="node" cx="162" cy="378" r="3"/><circle class="node" cx="291" cy="299" r="2.5"/><circle class="node" cx="377" cy="365" r="3.5"/><circle class="node" cx="156" cy="162" r="2.5"/><circle class="node" cx="360" cy="241" r="3.5"/><circle class="node" cx="375" cy="161" r="2.5"/><circle class="node" cx="469" cy="34" r="3.5"/><circle class="node" cx="362" cy="165" r="3.5"/><circle class="node" cx="42" cy="273" r="3"/><circle class="node" cx="54" cy="114" r="3"/><circle class="node" cx="179" cy="87" r="3"/><circle class="node is-accent" cx="106" cy="57" r="4"/><text class="label" x="116" y="49">keypoints</text></svg></div>
-    <div class="container">
-      <p class="crumbs" data-reveal="fade"><a href="index.html#work"><svg><use href="#i-arrow-right"/></svg> All work</a></p>
-      <p class="mono" data-reveal style="margin-bottom:20px">Case study · 05 · Computer vision + physical computing</p>
-      <h1 class="display h-hero" id="p-title" data-reveal style="--d:60ms">Turning a hand gesture into a <em>physical</em> output.</h1>
-      <p class="lede" data-reveal style="--d:120ms">A webcam‑based vision system that detects a face, counts raised fingers, and drives LEDs through an Arduino in real time. My first complete sensing‑to‑actuation loop.</p>
-      <dl class="meta-grid" data-reveal style="--d:180ms">
+<main id="main" tabindex="-1">
+  <section class="p-hero" aria-labelledby="p-title">
+    <div class="p-hero-media" aria-hidden="true"><img src="assets/img/web/atmo-facehand.jpg" alt="" width="1920" height="1072" fetchpriority="high"></div>
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html#work"><svg aria-hidden="true"><use href="#i-arrow-right"/></svg> All work</a></p>
+      <p class="p-kicker">Computer vision meets physical computing.</p>
+      <h1 class="p-title" id="p-title">Turning a hand gesture into a physical output.</h1>
+      <p class="p-lede">A webcam-based vision system that detects a face, counts raised fingers, and drives LEDs through an Arduino in real time. My first complete sensing-to-actuation loop.</p>
+      <dl class="meta-grid">
         <div><dt>Category</dt><dd>Computer vision, physical computing</dd></div>
-        <div><dt>Stack</dt><dd>Python · OpenCV · MediaPipe · PyFirmata · Arduino UNO</dd></div>
+        <div><dt>Stack</dt><dd>Python, OpenCV, MediaPipe, PyFirmata, Arduino UNO</dd></div>
         <div><dt>Timeline</dt><dd>November 2021</dd></div>
-        <div><dt>Recognition</dt><dd>College mini‑project</dd></div>
+        <div><dt>Recognition</dt><dd>College mini-project</dd></div>
       </dl>
-      <figure class="project-cover vf" data-reveal="scale" style="--d:240ms">
-        <span class="vf-b" aria-hidden="true"></span>
-        <img src="assets/img/web/face-hand-cover.jpg" alt="Webcam frame with hand landmarks and a face bounding box, wired LEDs in the foreground" width="1400" height="788" fetchpriority="high">
-      </figure>
+      <figure class="p-cover"><img src="assets/img/web/face-hand-cover.jpg" alt="Webcam frame with hand landmarks and a face bounding box, wired LEDs in the foreground" width="1400" height="788" fetchpriority="high"></figure>
     </div>
   </section>
 
-  <section class="section" style="padding-top: clamp(64px, 8vw, 112px)">
-    <div class="container project-body">
-      <aside class="side" data-reveal>
-        <p class="mono" style="margin-bottom:16px">On this page</p>
-        <ol>
-          <li><a href="#overview">Overview</a></li>
-          <li><a href="#how">How it works</a></li>
-          <li><a href="#impact">Results</a></li>
-          
-          <li><a href="#gallery">Gallery</a></li>
-        </ol>
-      </aside>
-      <div>
-        <section id="overview" data-reveal>
-          <h2 class="display">Overview</h2>
-          <div class="prose"><p>This project connected two kinds of computing I had been exploring separately. MediaPipe identifies 21 landmarks on the hand; the Python application compares fingertip and joint positions to work out how many fingers are raised, then passes that count through PyFirmata to an Arduino, which lights the same number of LEDs on a breadboard.</p>
-<p>It was a small project, but the loop was complete: <strong>observe the real world, interpret the signal, make a decision, drive a physical response.</strong> That pattern shows up again in everything I have built since, from FitForm to FitandFine.</p></div>
-        </section>
-        <section id="how" data-reveal>
-          <h2 class="display">How it works</h2>
-          <ul class="bullets"><li><strong>Hand landmarks.</strong> MediaPipe Hands returns 21 keypoints per hand; comparing fingertip and knuckle positions gives a reliable finger count.</li>
+  <div class="wrap p-body">
+    <aside class="p-side">
+      <p>On this page</p>
+      <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#impact">Results</a></li>
+        
+        <li><a href="#gallery">Gallery</a></li>
+      </ol>
+    </aside>
+    <div class="p-main">
+      <section id="overview" data-reveal>
+        <h2>Overview</h2>
+        <div class="prose"><p>This project connected two kinds of computing I had been exploring separately. MediaPipe identifies 21 landmarks on the hand; the Python application compares fingertip and joint positions to work out how many fingers are raised, then passes that count through PyFirmata to an Arduino, which lights the same number of LEDs on a breadboard.</p>
+<p>It was a small project, but the loop was complete: <strong>observe the real world, interpret the signal, make a decision, drive a physical response.</strong> That pattern shows up again in everything I have built since, FitForm and FitandFine included.</p></div>
+      </section>
+      <section id="how" data-reveal>
+        <h2>How it works</h2>
+        <ul class="bullets"><li><strong>Hand landmarks.</strong> MediaPipe Hands returns 21 keypoints per hand; comparing fingertip and knuckle positions gives a reliable finger count.</li>
 <li><strong>Face detection.</strong> A face model draws a bounding box and confirms a person is present before the system acts.</li>
 <li><strong>Serial bridge.</strong> PyFirmata talks to the Arduino UNO over USB, so Python sets digital pins directly with no custom firmware.</li>
 <li><strong>Actuation.</strong> Each finger count maps to a pin pattern that lights one to five LEDs in real time.</li></ul>
-        </section>
-        <section id="impact" data-reveal><h2 class="display">Impact</h2><div class="stat-row"><div class="stat"><div class="num">21</div><div class="lbl">hand landmarks tracked</div></div><div class="stat"><div class="num">1-5</div><div class="lbl">LEDs driven by finger count</div></div><div class="stat"><div class="num">Real time</div><div class="lbl">vision to actuation</div></div></div></section>
-        
-        <section id="gallery" data-reveal>
-          <h2 class="display">Gallery</h2>
-          <div class="gallery"><figure><img src="assets/img/web/face-hand-cover.jpg" alt="Live detection output with hand landmarks and a face box" loading="lazy"><figcaption>Live detection</figcaption></figure><figure class="is-contain"><img src="assets/img/web/face-hand-diagram.jpg" alt="Block diagram of the vision-to-Arduino pipeline" loading="lazy"><figcaption>Block diagram</figcaption></figure><figure class="is-contain"><img src="assets/img/web/face-hand-arduino.jpg" alt="Arduino UNO and LED breadboard wiring" loading="lazy"><figcaption>Arduino wiring</figcaption></figure></div>
-        </section>
-      </div>
+      </section>
+      <section id="impact" data-reveal><h2>Results</h2><div class="stat-row"><div class="stat"><div class="num">21</div><div class="lbl">hand landmarks tracked</div></div><div class="stat"><div class="num">1-5</div><div class="lbl">LEDs driven by finger count</div></div><div class="stat"><div class="num">Real time</div><div class="lbl">vision to actuation</div></div></div></section>
+      
+      <section id="gallery" data-reveal>
+        <h2>Gallery</h2>
+        <div class="gallery"><figure><img src="assets/img/web/face-hand-cover.jpg" alt="Live detection output with hand landmarks and a face box" loading="lazy"><figcaption>Live detection</figcaption></figure><figure class="is-contain"><img src="assets/img/web/face-hand-diagram.jpg" alt="Block diagram of the vision-to-Arduino pipeline" loading="lazy"><figcaption>Block diagram</figcaption></figure><figure class="is-contain"><img src="assets/img/web/face-hand-arduino.jpg" alt="Arduino UNO and LED breadboard wiring" loading="lazy"><figcaption>Arduino wiring</figcaption></figure></div>
+      </section>
     </div>
-  </section>
+  </div>
 
   <section class="next-project">
-    <div class="container" style="position:relative">
-      <div class="art" style="right: 2%; top: 10%; width: min(26vw, 300px); aspect-ratio: 520/420; z-index: -1;"><svg viewBox="0 0 520 420" class="constellation" aria-hidden="true"><line class="edge" x1="338" y1="255" x2="298" y2="206"/><line class="edge" x1="338" y1="255" x2="196" y2="332"/><line class="edge" x1="338" y1="255" x2="459" y2="131"/><line class="edge" x1="298" y1="206" x2="408" y2="73"/><line class="edge" x1="298" y1="206" x2="160" y2="244"/><line class="edge" x1="298" y1="206" x2="149" y2="41"/><line class="edge" x1="408" y1="73" x2="459" y2="131"/><line class="edge" x1="160" y1="244" x2="100" y2="259"/><line class="edge" x1="160" y1="244" x2="196" y2="332"/><line class="edge" x1="160" y1="244" x2="155" y2="331"/><line class="edge" x1="160" y1="244" x2="149" y2="41"/><line class="edge" x1="100" y1="259" x2="155" y2="331"/><line class="edge" x1="196" y1="332" x2="155" y2="331"/><circle class="node" cx="338" cy="255" r="2.5"/><circle class="node" cx="298" cy="206" r="3"/><circle class="node" cx="408" cy="73" r="3.5"/><circle class="node" cx="160" cy="244" r="2.5"/><circle class="node is-accent" cx="100" cy="259" r="4"/><circle class="node" cx="196" cy="332" r="3"/><circle class="node" cx="155" cy="331" r="3"/><circle class="node" cx="459" cy="131" r="3.5"/><circle class="node" cx="149" cy="41" r="3"/></svg></div>
+    <div class="wrap">
       <a href="RoboticArm.html">
-        <span class="mono">Next project</span>
-        <span class="display h-section">Gesture‑Controlled Robotic Arm <svg><use href="#i-arrow-right"/></svg></span>
+        <span>Next project</span>
+        <span class="next-title">Gesture-Controlled Robotic Arm <svg aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
       </a>
     </div>
   </section>
 </main>
 
 <footer class="footer">
-  <div class="container">
-    <p>© <span data-year>2026</span> Designed and built by Aditya Sidham in Los Angeles.</p>
-    <span class="clock" data-clock>Los Angeles</span>
+  <div class="wrap footer-inner">
+    <p>© <span data-year>2026</span> Designed and built by Aditya Sidham in Los Angeles. Photos and screenshots are real. Scene imagery made with Runway.</p>
+    <span class="clock chip" data-clock>Los Angeles</span>
     <nav aria-label="Footer">
       <a href="index.html#work">Work</a>
       <a href="index.html#about">About</a>
@@ -176,10 +174,9 @@
 </footer>
 
 <dialog class="lightbox" id="lightbox" aria-label="Image preview">
-  <button class="icon-btn close" type="button" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <button class="icon-btn close" type="button" aria-label="Close"><svg viewBox="0 0 24 24" stroke-width="1.75" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
   <img src="" alt="">
 </dialog>
-<a class="icon-btn to-top" href="#top" aria-label="Back to top"><svg><use href="#i-arrow-up"/></svg></a>
-<script src="assets/js/main.js?v=20260914e" defer></script>
+<script src="assets/js/main.js?v=20261012p" defer></script>
 </body>
 </html>
